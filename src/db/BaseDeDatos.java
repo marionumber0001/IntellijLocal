@@ -5,27 +5,33 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class BaseDeDatos {
+    static BaseDeDatos instancia = null;
 
     // Librería de MySQL
-    public String driver = "com.mysql.jdbc.Driver";
-
+    private String driver = "com.mysql.jdbc.Driver";
     // Nombre de la base de datos
-    public String database = "databasemovies";
-
+    private String database = "nba";
     // Host
-    public String hostname = "nba.cqgv7vsphdtj.us-east-2.rds.amazonaws.com";
-
+    private String hostname = "nba.cqgv7vsphdtj.us-east-2.rds.amazonaws.com";
     // Puerto
-    public String port = "3306";
-
+    private String port = "3306";
     // Ruta de nuestra base de datos (desactivamos el uso de SSL con "?useSSL=false")
-    public String url = "jdbc:mysql://" + hostname + ":" + port + "/" + database + "?useSSL=false";
-
+    private String url = "jdbc:mysql://" + hostname + ":" + port + "/" + database + "?useSSL=false";
     // Nombre de usuario
-    public String username = "ruut";
-
+    private String username = "ruut";
     // Clave de usuario
-    public String password = "Holamundo66";
+    private String password = "Holamundo66";
+
+    private BaseDeDatos(){
+
+    }
+
+    public static BaseDeDatos getInstancia(){
+     if (instancia==null)
+         instancia = new BaseDeDatos();
+
+     return instancia;
+    }
 
     public Connection conectarMySQL() {
         Connection conn = null;
