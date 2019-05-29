@@ -84,7 +84,7 @@
                         <AnchorPane layoutX="14.0" layoutY="6.0" prefHeight="90.0" prefWidth="90.0" styleClass="teamIcon" />
                     </children>
                 </AnchorPane>
-                <TableView layoutX="550.0" layoutY="259.0" prefHeight="270.0" prefWidth="550.0" styleClass="textTable" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="201.0" AnchorPane.rightAnchor="0.0" />
+                <TableView fx:id="fTable" layoutX="201.0" layoutY="230.0" prefHeight="270.0" prefWidth="550.0" styleClass="textTable" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="201.0" AnchorPane.rightAnchor="0.0" />
             </children>
         </AnchorPane>
     </children>

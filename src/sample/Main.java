@@ -52,6 +52,8 @@ public class Main extends Application {
         primaryStage.setScene(scene);
         primaryStage.show();
 
+
+
        /*
        AccesToData accesToData = new AccesToData();
         var jugadores = accesToData.getJugadores();

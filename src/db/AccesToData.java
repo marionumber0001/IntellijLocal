@@ -27,4 +27,19 @@ public class AccesToData {
         }
 
     }
+
+    public Jugador getJugador(int id){
+        try {
+            var statement = baseDeDatos.conectarMySQL().prepareStatement("SELECT * FROM jugadores WHERE codigo = "+id);
+            var resultado = statement.executeQuery();
+
+            if (resultado.next())
+                return new Jugador(resultado);
+            else return null;
+
+        }catch (Exception e){
+            e.printStackTrace();
+            return null;
+        }
+    }
 }
