@@ -9,26 +9,26 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
-import modelos.Jugador;
+import javafx.scene.input.MouseEvent;
 
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.ResourceBundle;
+import java.util.function.BiFunction;
 
 public class ControllerPlayer implements Initializable {
     private static AccesToData accesToData = new AccesToData();
 
     public ListView listaJugadores;
-
-    public TableView<Jugador> fTable;
-
-    public TableColumn<String[], String> fJatributo = new TableColumn<>("");
-    public TableColumn<String[], String> fJvalor = new TableColumn<>("");
+    public TableView<ArrayList<String>> fTable;
 
     /*
     COLUMNAS
      */
+    public TableColumn<ArrayList<String>, String> fJatributo = new TableColumn<>("");
+    public TableColumn<ArrayList<String>, String> fJvalor = new TableColumn<>("");
     private ObservableList<String> items = FXCollections.observableArrayList();
-    private ObservableList<String[]> jData = FXCollections.observableArrayList();
+    private ObservableList<ArrayList<String>> jData = FXCollections.observableArrayList();
      /*
     COLUMNAS
      */
@@ -36,6 +36,7 @@ public class ControllerPlayer implements Initializable {
     public void linkJugadores(ActionEvent actionEvent) {
         Main.SetScene("Player.fxml");
     }
+
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -45,9 +46,39 @@ public class ControllerPlayer implements Initializable {
         listaJugadores.setItems(items);
         FXCollections.sort(items);
 
-        fJatributo.setCellValueFactory((String e [])-> Bindings.createStringBinding(()->e[0]));
+        fJatributo.setCellValueFactory(e -> Bindings.createStringBinding(() -> e.getValue().get(0)));
+        fJvalor.setCellValueFactory(e -> Bindings.createStringBinding(() -> e.getValue().get(1)));
 
         fTable.getColumns().addAll(fJatributo, fJvalor);
     }
 
+    //Esta funcion se debe ejecutar al hacer click en un jugador
+    public void click(String nom) {
+        jData.clear();
+
+        var jug = accesToData.getJugador(nom);
+
+        BiFunction<String, String, Boolean> function = (String tipo, String valor) -> {
+            ArrayList<String> nombre = new ArrayList<>();
+            nombre.add(tipo);
+            nombre.add(valor);
+            jData.add(nombre);
+
+            return true;
+        };
+
+        function.apply("NOMBRE", jug.getNombre());
+        function.apply("PROCEDENCIA", jug.getProcedencia());
+        function.apply("ALTURA", jug.getAltura());
+        function.apply("PESO", jug.getPeso() + " lbs");
+        function.apply("POSICIÓN", jug.getPosicion());
+
+        fTable.setItems(jData);
+
+        //Sucesivamente con todas las propieadades
+    }
+
+    public void linkJugador(MouseEvent mouseEvent) {
+        click(listaJugadores.getSelectionModel().getSelectedItem().toString());
+    }
 }

@@ -8,7 +8,7 @@ public class AccesToData {
 
     private static BaseDeDatos baseDeDatos = BaseDeDatos.getInstancia();
 
-    public ArrayList<Jugador> getJugadores(){
+    public ArrayList<Jugador> getJugadores() {
 
         try {
             ArrayList<Jugador> jugadors = new ArrayList<Jugador>();
@@ -21,23 +21,38 @@ public class AccesToData {
 
             return jugadors;
 
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
             return null;
         }
 
     }
 
-    public Jugador getJugador(int id){
+    public Jugador getJugador(int id) {
         try {
-            var statement = baseDeDatos.conectarMySQL().prepareStatement("SELECT * FROM jugadores WHERE codigo = "+id);
+            var statement = baseDeDatos.conectarMySQL().prepareStatement("SELECT * FROM jugadores WHERE codigo = " + id);
             var resultado = statement.executeQuery();
 
             if (resultado.next())
                 return new Jugador(resultado);
             else return null;
 
-        }catch (Exception e){
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    public Jugador getJugador(String nombre) {
+        try {
+            var statement = baseDeDatos.conectarMySQL().prepareStatement("SELECT * FROM jugadores WHERE Nombre = '" + nombre + "'");
+            var resultado = statement.executeQuery();
+
+            if (resultado.next())
+                return new Jugador(resultado);
+            else return null;
+
+        } catch (Exception e) {
             e.printStackTrace();
             return null;
         }
