@@ -1,20 +1,15 @@
 package sample;
 
 import db.AccesToData;
-import javafx.beans.binding.Bindings;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ListView;
-import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.input.MouseEvent;
 
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
-import java.util.function.BiFunction;
 
 public class ControllerPlayer implements Initializable {
     private static AccesToData accesToData = new AccesToData();
@@ -23,14 +18,12 @@ public class ControllerPlayer implements Initializable {
     public TableView<ArrayList<String>> fTable;
 
     /*
-    COLUMNAS
-     */
+
     public TableColumn<ArrayList<String>, String> fJatributo = new TableColumn<>("");
     public TableColumn<ArrayList<String>, String> fJvalor = new TableColumn<>("");
     private ObservableList<String> items = FXCollections.observableArrayList();
     private ObservableList<ArrayList<String>> jData = FXCollections.observableArrayList();
-     /*
-    COLUMNAS
+
      */
 
     public void linkJugadores(ActionEvent actionEvent) {
@@ -40,7 +33,7 @@ public class ControllerPlayer implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        for (var jug : accesToData.getJugadores()) {
+        /*for (var jug : accesToData.getJugadores()) {
             items.add(jug.toString());
         }
         listaJugadores.setItems(items);
@@ -50,11 +43,13 @@ public class ControllerPlayer implements Initializable {
         fJvalor.setCellValueFactory(e -> Bindings.createStringBinding(() -> e.getValue().get(1)));
 
         fTable.getColumns().addAll(fJatributo, fJvalor);
+
+         */
     }
 
     //Esta funcion se debe ejecutar al hacer click en un jugador
     public void click(String nom) {
-        jData.clear();
+       /* jData.clear();
 
         var jug = accesToData.getJugador(nom);
 
@@ -74,6 +69,8 @@ public class ControllerPlayer implements Initializable {
         function.apply("POSICIÓN", jug.getPosicion());
 
         fTable.setItems(jData);
+
+        */
 
         //Sucesivamente con todas las propieadades
     }

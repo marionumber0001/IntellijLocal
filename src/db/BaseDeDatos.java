@@ -5,8 +5,9 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class BaseDeDatos {
-    static BaseDeDatos instancia = null;
 
+    //Patron singleton
+    static BaseDeDatos instancia = null;
     // Librería de MySQL
     private String driver = "com.mysql.jdbc.Driver";
     // Nombre de la base de datos
@@ -22,15 +23,14 @@ public class BaseDeDatos {
     // Clave de usuario
     private String password = "Holamundo66";
 
-    private BaseDeDatos(){
-
+    private BaseDeDatos() {
     }
 
-    public static BaseDeDatos getInstancia(){
-     if (instancia==null)
-         instancia = new BaseDeDatos();
+    public static BaseDeDatos getInstancia() {
+        if (instancia == null)
+            instancia = new BaseDeDatos();
 
-     return instancia;
+        return instancia;
     }
 
     public Connection conectarMySQL() {
@@ -45,5 +45,4 @@ public class BaseDeDatos {
 
         return conn;
     }
-
 }

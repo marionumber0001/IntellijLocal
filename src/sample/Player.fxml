@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.StackedAreaChart?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.layout.*?>
@@ -65,18 +67,29 @@
                         </JFXButton>
                     </buttons>
                 </ButtonBar>
-                <ListView fx:id="listaJugadores" layoutX="1.0" layoutY="83.0" onMouseClicked="#linkJugador" prefHeight="405.0" prefWidth="202.0" styleClass="listaVista" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="548.0" AnchorPane.topAnchor="83.0" />
+                <ListView fx:id="pyListViewTotal" layoutX="1.0" layoutY="83.0" onMouseClicked="#linkJugador" prefHeight="405.0" prefWidth="202.0" styleClass="listaVista" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="548.0" AnchorPane.topAnchor="83.0" />
                 <AnchorPane layoutX="200.0" layoutY="89.0" prefHeight="113.0" prefWidth="550.0" styleClass="anchorPane" AnchorPane.leftAnchor="201.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="83.0">
                     <children>
-                        <Label layoutX="120.0" layoutY="50.0" prefHeight="18.0" prefWidth="70.0" styleClass="anchorLabel" text="ATLANTA" />
-                        <Label layoutX="120.0" layoutY="77.0" prefHeight="18.0" prefWidth="110.0" styleClass="anchorLabelGR" text="HAWKS" />
-                        <Label layoutX="358.0" layoutY="42.0" styleClass="anchorLabel" text="CIUDAD" AnchorPane.bottomAnchor="54.0" AnchorPane.rightAnchor="147.0" />
-                        <Label layoutX="363.0" layoutY="89.0" styleClass="anchorLabel" text="CONFERENCIA" AnchorPane.bottomAnchor="7.0" AnchorPane.rightAnchor="108.0" />
-                        <Label layoutX="485.0" layoutY="89.0" styleClass="anchorLabel" text="DIVISIÓN" AnchorPane.bottomAnchor="7.0" AnchorPane.rightAnchor="14.0" />
-                        <AnchorPane layoutX="14.0" layoutY="6.0" prefHeight="90.0" prefWidth="90.0" styleClass="teamIcon" />
+                        <Label fx:id="pyLabelNameTeam" layoutX="120.0" layoutY="77.0" prefHeight="18.0" prefWidth="110.0" styleClass="anchorLabelGR" text="HAWKS" />
+                        <Label fx:id="pyLabelAltura" layoutX="358.0" layoutY="42.0" styleClass="anchorLabel" text="Altura" AnchorPane.bottomAnchor="54.0" AnchorPane.rightAnchor="147.0" />
+                        <Label fx:id="pyLabelProcedencia" layoutX="363.0" layoutY="81.0" styleClass="anchorLabel" text="Procedencia" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="108.0" />
+                        <Label fx:id="pyLabelEquipo" layoutX="485.0" layoutY="89.0" styleClass="anchorLabel" text="equipo" AnchorPane.bottomAnchor="7.0" AnchorPane.rightAnchor="14.0" />
+                        <AnchorPane fx:id="fLogo" layoutX="14.0" layoutY="6.0" prefHeight="90.0" prefWidth="90.0" styleClass="teamIcon" />
+                  <Label fx:id="pyLabelPosicion" layoutX="485.0" layoutY="69.0" styleClass="anchorLabel" text="posicion" />
+                  <Label fx:id="pyLabelPeso" layoutX="475.0" layoutY="46.0" styleClass="anchorLabel" text="peso" />
+                  <JFXButton layoutX="431.0" layoutY="2.0" onAction="#clickModificar" text="Modify" />
+                  <JFXButton layoutX="481.0" layoutY="2.0" onAction="#clickEliminar" text="Eliminar" />
                     </children>
                 </AnchorPane>
-                <TableView fx:id="fTable" layoutX="550.0" layoutY="259.0" prefHeight="270.0" prefWidth="550.0" styleClass="textTable" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="201.0" AnchorPane.rightAnchor="0.0" />
+            <ListView fx:id="pyListViewTeam" layoutX="202.0" layoutY="196.0" onMouseClicked="#linkJugador" prefHeight="328.0" prefWidth="202.0" styleClass="listaVistaJ" />
+            <StackedAreaChart fx:id="pyGrafica" layoutX="404.0" layoutY="190.0" prefHeight="328.0" prefWidth="346.0">
+              <xAxis>
+                <NumberAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </StackedAreaChart>
             </children>
         </AnchorPane>
     </children>

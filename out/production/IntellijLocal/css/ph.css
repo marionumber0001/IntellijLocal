@@ -50,6 +50,10 @@
     -fx-background-color: #560023;
 }
 
+.listaVistaJ {
+    -fx-background-color: #022739;
+}
+
 
 .teamIcon {
     -fx-background-image: url(../images/at.png);

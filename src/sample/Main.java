@@ -18,16 +18,11 @@ public class Main extends Application {
         launch(args);
     }
 
-    public static void SetScene(String page)
-    {
-        try
-        {
+    public static void SetScene(String page) {
+        try {
             Parent root = FXMLLoader.load(instancia.getClass().getResource(page));
             decorator.setContent(root);
-        }
-
-        catch (IOException e)
-        {
+        } catch (IOException e) {
             e.printStackTrace();
             return;
         }
@@ -36,7 +31,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
 
-        Parent root = FXMLLoader.load(getClass().getResource("Sample.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("Equipo.fxml"));
 
         instancia = this;
         decorator = new JFXDecorator(primaryStage, root, false, false, true);

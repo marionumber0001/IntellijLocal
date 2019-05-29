@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="500.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="sample.ControllerAltaEquipo">
+    <children>
+        <JFXTextField fx:id="eFieldNombre" layoutX="163.0" layoutY="72.0" prefHeight="25.0" prefWidth="200.0" AnchorPane.leftAnchor="125.0" AnchorPane.rightAnchor="425.0" AnchorPane.topAnchor="125.0" />
+        <JFXTextField fx:id="eFieldCiudad" layoutX="428.0" layoutY="125.0" prefHeight="25.0" prefWidth="200.0" AnchorPane.leftAnchor="400.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="125.0" />
+        <JFXTextField fx:id="eFieldConferencia" layoutX="173.0" layoutY="82.0" prefHeight="25.0" prefWidth="200.0" AnchorPane.leftAnchor="125.0" AnchorPane.rightAnchor="425.0" AnchorPane.topAnchor="200.0" />
+        <JFXTextField fx:id="eFieldDivision" layoutX="450.0" layoutY="188.0" prefHeight="25.0" prefWidth="200.0" AnchorPane.leftAnchor="400.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="200.0" />
+        <Label layoutX="125.0" layoutY="108.0" text="Nombre" AnchorPane.leftAnchor="125.0" AnchorPane.topAnchor="105.0" />
+        <Label layoutX="135.0" layoutY="118.0" text="Ciudad" AnchorPane.leftAnchor="400.0" AnchorPane.rightAnchor="285.0" AnchorPane.topAnchor="105.0" />
+        <Label layoutX="145.0" layoutY="128.0" text="Conferencia" AnchorPane.leftAnchor="125.0" AnchorPane.topAnchor="180.0" />
+        <Label layoutX="155.0" layoutY="138.0" text="División" AnchorPane.leftAnchor="400.0" AnchorPane.topAnchor="180.0" />
+        <JFXButton layoutX="538.0" layoutY="349.0" onAction="#clickCancelar" text="Cancelar" AnchorPane.leftAnchor="538.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="349.0" />
+        <JFXButton layoutX="438.0" layoutY="349.0" onAction="#clickAceptar" text="Aceptar" AnchorPane.leftAnchor="438.0" AnchorPane.rightAnchor="250.0" AnchorPane.topAnchor="349.0" />
+        <ButtonBar layoutX="132.0" layoutY="24.0" prefHeight="40.0" prefWidth="468.0" AnchorPane.leftAnchor="125.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="14.0">
+            <buttons>
+                <JFXButton fx:id="botonNavEquipo" buttonType="RAISED" prefHeight="25.0" prefWidth="110.0" styleClass="botonNav" text="EQUIPOS">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                    <ripplerFill>
+                        <RadialGradient centerX="0.5" centerY="0.5" radius="0.25">
+                            <stops>
+                                <Stop color="BLACK" />
+                                <Stop color="#0080ff" offset="1.0" />
+                            </stops>
+                        </RadialGradient>
+                    </ripplerFill>
+                </JFXButton>
+                <JFXButton fx:id="botonNavJugador" buttonType="RAISED" onAction="#linkJugadores" prefHeight="25.0" prefWidth="110.0" styleClass="botonNav" text="JUGADORES">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                    <ripplerFill>
+                        <RadialGradient centerX="0.5" centerY="0.5" radius="0.25">
+                            <stops>
+                                <Stop color="BLACK" />
+                                <Stop color="#0080ff" offset="1.0" />
+                            </stops>
+                        </RadialGradient>
+                    </ripplerFill>
+                </JFXButton>
+                <JFXButton fx:id="botonNavPartido" buttonType="RAISED" prefHeight="25.0" prefWidth="110.0" styleClass="botonNav" text="PARTIDOS">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                    <ripplerFill>
+                        <RadialGradient centerX="0.5" centerY="0.5" radius="0.25">
+                            <stops>
+                                <Stop color="#800009" />
+                                <Stop color="#0080ff" offset="1.0" />
+                            </stops>
+                        </RadialGradient>
+                    </ripplerFill>
+                </JFXButton>
+                <MenuButton fx:id="botonNavModificacion" mnemonicParsing="false" prefHeight="25.0" prefWidth="125.0" text="EDICIÓN">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Fichajes" />
+                        <MenuItem mnemonicParsing="false" text="Alta de jugadores" />
+                        <MenuItem mnemonicParsing="false" text="Alta de equipos" />
+                    </items>
+                    <textFill>
+                        <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                            <stops>
+                                <Stop color="#800009" />
+                                <Stop color="#0080ff" offset="1.0" />
+                            </stops>
+                        </RadialGradient>
+                    </textFill>
+                </MenuButton>
+            </buttons>
+        </ButtonBar>
+    </children>
+</AnchorPane>
