@@ -208,8 +208,7 @@ public class AccesToData {
                 while (resultado.next())
                     jugadors.add(new Jugador(resultado));
 
-                if (jugadors.isEmpty()) return false;
-                else return true;
+                return !jugadors.isEmpty();
             } catch (Exception e) {
                 e.printStackTrace();
                 return false;
@@ -221,6 +220,13 @@ public class AccesToData {
         if (func.apply("Procedencia", str)) return jugadors;
         if (func.apply("Altura", str)) return jugadors;
         if (func.apply("Posicion", str)) return jugadors;
+
+        try {
+            Double.parseDouble(busqueda);
+        } catch (Exception e) {
+            return jugadors;
+        }
+
         if (func.apply("Peso", num)) return jugadors;
 
         return jugadors;
@@ -243,8 +249,7 @@ public class AccesToData {
                 while (resultado.next())
                     equipos.add(new Equipo(resultado));
 
-                if (equipos.isEmpty()) return false;
-                else return true;
+                return !equipos.isEmpty();
             } catch (Exception e) {
                 e.printStackTrace();
                 return false;

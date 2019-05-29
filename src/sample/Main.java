@@ -30,7 +30,6 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-
         Parent root = FXMLLoader.load(getClass().getResource("Equipo.fxml"));
 
         instancia = this;
@@ -46,15 +45,5 @@ public class Main extends Application {
 
         primaryStage.setScene(scene);
         primaryStage.show();
-
-
-
-       /*
-       AccesToData accesToData = new AccesToData();
-        var jugadores = accesToData.getJugadores();
-        for (var jugador: jugadores) {
-            System.out.println(jugador.getNombre());
-        }
-        */
     }
 }

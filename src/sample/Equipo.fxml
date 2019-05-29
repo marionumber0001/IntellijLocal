@@ -79,7 +79,9 @@
                     </children>
                 </AnchorPane>
                 <TableView fx:id="fTable" layoutX="201.0" layoutY="230.0" prefHeight="270.0" prefWidth="550.0" styleClass="textTable" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="201.0" AnchorPane.rightAnchor="0.0" />
-            <JFXTextField layoutX="14.0" layoutY="54.0" onKeyPressed="#eKeyPress" prefHeight="25.0" prefWidth="188.0" AnchorPane.rightAnchor="548.0" />
+                <TextField fx:id="eFieldSearcher" layoutX="51.0" layoutY="58.0" onKeyPressed="#eKeyPress"
+                           prefHeight="25.0" prefWidth="188.0" AnchorPane.leftAnchor="14.0"
+                           AnchorPane.rightAnchor="548.0"/>
             </children>
         </AnchorPane>
     </children>

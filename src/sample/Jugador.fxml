@@ -1,20 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.jfoenix.controls.JFXButton?>
-<?import javafx.scene.Cursor?>
+<?import com.jfoenix.controls.*?>
 <?import javafx.scene.chart.NumberAxis?>
 <?import javafx.scene.chart.StackedAreaChart?>
-<?import javafx.scene.control.ButtonBar?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ListView?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.ColumnConstraints?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.RowConstraints?>
-<?import javafx.scene.paint.RadialGradient?>
-<?import javafx.scene.paint.Stop?>
-
-<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerPlayer">
+<?import javafx.scene.control.*?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<GridPane xmlns:fx="http://javafx.com/fxml/1" alignment="center" hgap="10" prefHeight="500.0" prefWidth="750.0"
+          vgap="10" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="sample.ControllerPlayer">
     <children>
         <AnchorPane prefHeight="500.0" prefWidth="750.0" styleClass="anchorMain">
             <children>
@@ -89,7 +83,7 @@
                     </children>
                 </AnchorPane>
             <ListView fx:id="pyListViewTeam" layoutX="202.0" layoutY="196.0" onMouseClicked="#linkJugador" prefHeight="328.0" prefWidth="202.0" styleClass="listaVistaJ" />
-            <StackedAreaChart layoutX="404.0" layoutY="190.0" prefHeight="328.0" prefWidth="346.0">
+            <StackedAreaChart fx:id="pyGrafica" layoutX="404.0" layoutY="190.0" prefHeight="328.0" prefWidth="346.0">
               <xAxis>
                 <NumberAxis side="BOTTOM" />
               </xAxis>
@@ -97,6 +91,9 @@
                 <NumberAxis side="LEFT" />
               </yAxis>
             </StackedAreaChart>
+                <TextField fx:id="pySearcher" layoutX="14.0" layoutY="54.0" onKeyReleased="#pyKeyPress"
+                           prefHeight="25.0" prefWidth="188.0" AnchorPane.leftAnchor="14.0"
+                           AnchorPane.rightAnchor="548.0"/>
             </children>
         </AnchorPane>
     </children>

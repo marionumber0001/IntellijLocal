@@ -1,11 +1,17 @@
 package sample;
 
 import db.AccesToData;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
-import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
+import modelos.Jugador;
 
 import java.net.URL;
 import java.util.ArrayList;
@@ -14,37 +20,31 @@ import java.util.ResourceBundle;
 public class ControllerPlayer implements Initializable {
     private static AccesToData accesToData = new AccesToData();
 
-    public ListView listaJugadores;
-    public TableView<ArrayList<String>> fTable;
+    public ListView pyListViewTotal;
+    public TextField pySearcher;
+    public Label pyLabelNameTeam;
+    private ObservableList<String> items = FXCollections.observableArrayList();
 
     /*
-
+    public TableView<ArrayList<String>> fTable;
     public TableColumn<ArrayList<String>, String> fJatributo = new TableColumn<>("");
     public TableColumn<ArrayList<String>, String> fJvalor = new TableColumn<>("");
-    private ObservableList<String> items = FXCollections.observableArrayList();
     private ObservableList<ArrayList<String>> jData = FXCollections.observableArrayList();
-
      */
 
     public void linkJugadores(ActionEvent actionEvent) {
-        Main.SetScene("Player.fxml");
+        Main.SetScene("Jugador.fxml");
     }
 
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        /*for (var jug : accesToData.getJugadores()) {
-            items.add(jug.toString());
-        }
-        listaJugadores.setItems(items);
-        FXCollections.sort(items);
-
+        /*
         fJatributo.setCellValueFactory(e -> Bindings.createStringBinding(() -> e.getValue().get(0)));
         fJvalor.setCellValueFactory(e -> Bindings.createStringBinding(() -> e.getValue().get(1)));
-
         fTable.getColumns().addAll(fJatributo, fJvalor);
-
          */
+        cargaListView(accesToData.getJugadores());
     }
 
     //Esta funcion se debe ejecutar al hacer click en un jugador
@@ -76,6 +76,29 @@ public class ControllerPlayer implements Initializable {
     }
 
     public void linkJugador(MouseEvent mouseEvent) {
-        click(listaJugadores.getSelectionModel().getSelectedItem().toString());
+        click(pyListViewTotal.getSelectionModel().getSelectedItem().toString());
+    }
+
+    public void pyKeyPress(KeyEvent keyEvent) {
+
+        if (keyEvent.getCode().equals(KeyCode.ENTER)) {
+            cargaListView(accesToData.buscarJugadores(pySearcher.getText()));
+        }
+    }
+
+    private void cargaListView(ArrayList<Jugador> aux) {
+        items.clear();
+
+        for (var jug : aux) {
+            items.add(jug.toString());
+        }
+        pyListViewTotal.setItems(items);
+        FXCollections.sort(items);
+    }
+
+    public void clickModificar(ActionEvent actionEvent) {
+    }
+
+    public void clickEliminar(ActionEvent actionEvent) {
     }
 }

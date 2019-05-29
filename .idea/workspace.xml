@@ -5,34 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="All good">
-      <change afterPath="$PROJECT_DIR$/src/modelos/Estadistica.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modelos/Partido.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/AltaEquipo.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/AltaJugador.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/ControllerAltaEquipo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/ControllerAltaJugador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/ControllerFichajes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/ControllerPartidos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/Equipo.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/Fichajes.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sample/Partidos.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IntellijLocal/css/ph.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IntellijLocal/css/ph.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/IntellijLocal/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IntellijLocal/sample/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IntellijLocal/sample/Player.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IntellijLocal/sample/Player.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IntellijLocal/sample/Sample.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IntellijLocal/sample/Stats.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IntellijLocal/sample/search.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/ph.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/ph.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IntellijLocal/sample/Player.fxml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/db/AccesToData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/AccesToData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/BaseDeDatos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/BaseDeDatos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/ControllerEquipo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/ControllerEquipo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/ControllerPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/ControllerPlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/ControllerSample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/ControllerEquipo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Equipo.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Equipo.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Player.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Player.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Sample.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Search.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Stats.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Player.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Jugador.fxml" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -109,8 +90,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="537">
-              <caret line="47" column="21" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
+            <state relative-caret-position="222">
+              <caret line="31" column="60" selection-start-line="31" selection-start-column="60" selection-end-line="31" selection-end-column="60" />
               <folding>
                 <element signature="e#404#405#0" expanded="true" />
                 <element signature="e#432#433#0" expanded="true" />
@@ -119,19 +100,54 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/db/AccesToData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3285">
+              <caret line="227" column="9" selection-start-line="227" selection-start-column="9" selection-end-line="227" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/ControllerPlayer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1095">
+              <caret line="90" selection-start-line="90" selection-end-line="90" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/sample/Jugador.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1500">
+              <caret line="100" column="93" selection-start-line="100" selection-start-column="93" selection-end-line="100" selection-end-column="93" />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="FxmlFile" />
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>style</find>
+      <find>sample</find>
+      <find>car</find>
+      <find>lista</find>
+      <find>pyKeyPress</find>
     </findStrings>
   </component>
   <component name="FindManager">
@@ -154,9 +170,7 @@
         <option value="$PROJECT_DIR$/src/sample/BaseDeDatos.java" />
         <option value="$PROJECT_DIR$/src/sample/Sample.fxml" />
         <option value="$PROJECT_DIR$/src/sample/ControllerSample.java" />
-        <option value="$PROJECT_DIR$/src/sample/Player.fxml" />
         <option value="$PROJECT_DIR$/src/css/ph.css" />
-        <option value="$PROJECT_DIR$/src/sample/ControllerPlayer.java" />
         <option value="$PROJECT_DIR$/src/sample/Busqueda.fxml" />
         <option value="$PROJECT_DIR$/src/sample/ControllerAltaEquipo.java" />
         <option value="$PROJECT_DIR$/src/sample/AltaEquipo.fxml" />
@@ -166,10 +180,15 @@
         <option value="$PROJECT_DIR$/src/sample/Partidos.fxml" />
         <option value="$PROJECT_DIR$/src/modelos/Equipo.java" />
         <option value="$PROJECT_DIR$/src/modelos/Jugador.java" />
-        <option value="$PROJECT_DIR$/src/db/AccesToData.java" />
         <option value="$PROJECT_DIR$/src/db/BaseDeDatos.java" />
         <option value="$PROJECT_DIR$/src/modelos/Estadistica.java" />
         <option value="$PROJECT_DIR$/src/modelos/Partido.java" />
+        <option value="$PROJECT_DIR$/src/sample/Player.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/As.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/ControllerEquipo.java" />
+        <option value="$PROJECT_DIR$/src/sample/Jugador.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/ControllerPlayer.java" />
+        <option value="$PROJECT_DIR$/src/db/AccesToData.java" />
         <option value="$PROJECT_DIR$/src/sample/Main.java" />
       </list>
     </option>
@@ -251,7 +270,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -367,7 +386,8 @@
       <workItem from="1559079075510" duration="4936000" />
       <workItem from="1559085144517" duration="1468000" />
       <workItem from="1559122484592" duration="21936000" />
-      <workItem from="1559164063118" duration="895000" />
+      <workItem from="1559164063118" duration="6098000" />
+      <workItem from="1559172495510" duration="481000" />
     </task>
     <task id="LOCAL-00001" summary="All good">
       <created>1558918368717</created>
@@ -404,15 +424,21 @@
       <option name="project" value="LOCAL" />
       <updated>1559144204466</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="All good">
+      <created>1559167272401</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1559167272401</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83454000" />
+    <option name="totallyTimeSpent" value="89138000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.21903323" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -423,7 +449,7 @@
       <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.22312704" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.35993487" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39739415" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -451,7 +477,7 @@
       <window_info anchor="right" id="Theme Preview" order="10" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.21601209" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.21903323" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -460,7 +486,7 @@
       <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.31921825" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35993487" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39739415" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -539,6 +565,18 @@
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/db/AccesToData.java</url>
+          <line>219</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
@@ -558,13 +596,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2169">
           <caret line="170" column="6" selection-start-line="170" selection-start-column="6" selection-end-line="170" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/javafx-sdk-12.0.1/lib/javafx.graphics.jar!/javafx/application/Application.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="70" column="25" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -607,20 +638,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/ControllerEquipo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/ControllerPlayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="71" selection-start-line="71" selection-end-line="71" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/AltaEquipo.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -628,13 +645,6 @@
         </state>
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/ControllerAltaEquipo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/AltaJugador.fxml">
       <provider selected="true" editor-type-id="text-editor">
@@ -644,30 +654,7 @@
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/ControllerAltaJugador.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="34" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Busqueda.fxml" />
-    <entry file="file://$PROJECT_DIR$/src/sample/Equipo.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1164">
-          <caret line="78" column="28" lean-forward="true" selection-start-line="78" selection-start-column="28" selection-end-line="78" selection-end-column="28" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Player.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1275">
-          <caret line="85" column="20" selection-start-line="85" selection-start-column="20" selection-end-line="85" selection-end-column="20" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Fichajes.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
@@ -675,13 +662,6 @@
         </state>
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/ControllerFichajes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="31" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="31" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Partidos.fxml">
       <provider selected="true" editor-type-id="text-editor">
@@ -740,13 +720,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/db/AccesToData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/modelos/Equipo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -786,16 +759,105 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/javafx-sdk-12.0.1/lib/javafx.graphics.jar!/javafx/application/Application.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="70" column="25" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/javafx-sdk-12.0.1/lib/javafx.graphics.jar!/com/sun/glass/ui/win/WinApplication.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="173" column="54" selection-start-line="173" selection-end-line="174" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/javafx-sdk-12.0.1/lib/javafx.fxml.jar!/javafx/fxml/FXMLLoader.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="455" selection-start-line="455" selection-end-line="455" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/ControllerAltaEquipo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/ControllerAltaJugador.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="34" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/ControllerFichajes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="31" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/As.fxml" />
+    <entry file="file://$PROJECT_DIR$/src/sample/Equipo.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="43" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/ControllerEquipo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="59">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#175#176#0" expanded="true" />
+            <element signature="e#219#220#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/player.fxml" />
     <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
-          <caret line="47" column="21" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
+        <state relative-caret-position="222">
+          <caret line="31" column="60" selection-start-line="31" selection-start-column="60" selection-end-line="31" selection-end-column="60" />
           <folding>
             <element signature="e#404#405#0" expanded="true" />
             <element signature="e#432#433#0" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/db/AccesToData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3285">
+          <caret line="227" column="9" selection-start-line="227" selection-start-column="9" selection-end-line="227" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/ControllerPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1095">
+          <caret line="90" selection-start-line="90" selection-end-line="90" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Jugador.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1500">
+          <caret line="100" column="93" selection-start-line="100" selection-start-column="93" selection-end-line="100" selection-end-column="93" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
   </component>
   <component name="masterDetails">
