@@ -7,13 +7,10 @@
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="All good">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/IntellijLocal/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IntellijLocal/sample/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IntellijLocal/sample/Player.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/AccesToData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/AccesToData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/ControllerEquipo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/ControllerEquipo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/ControllerPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/ControllerPlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Equipo.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Equipo.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Player.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Jugador.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modelos/Equipo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modelos/Equipo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modelos/Estadistica.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modelos/Estadistica.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modelos/Jugador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modelos/Jugador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modelos/Partido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modelos/Partido.java" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -88,47 +85,16 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/modelos/Partido.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="31" column="60" selection-start-line="31" selection-start-column="60" selection-end-line="31" selection-end-column="60" />
+            <state relative-caret-position="210">
+              <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
               <folding>
-                <element signature="e#404#405#0" expanded="true" />
-                <element signature="e#432#433#0" expanded="true" />
+                <element signature="e#2439#2440#0" expanded="true" />
+                <element signature="e#2509#2510#0" expanded="true" />
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/db/AccesToData.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3285">
-              <caret line="227" column="9" selection-start-line="227" selection-start-column="9" selection-end-line="227" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/ControllerPlayer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1095">
-              <caret line="90" selection-start-line="90" selection-end-line="90" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/Jugador.fxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1500">
-              <caret line="100" column="93" selection-start-line="100" selection-start-column="93" selection-end-line="100" selection-end-column="93" />
-            </state>
-          </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
     </leaf>
@@ -178,18 +144,18 @@
         <option value="$PROJECT_DIR$/src/sample/Equipo.fxml" />
         <option value="$PROJECT_DIR$/src/sample/Fichajes.fxml" />
         <option value="$PROJECT_DIR$/src/sample/Partidos.fxml" />
-        <option value="$PROJECT_DIR$/src/modelos/Equipo.java" />
-        <option value="$PROJECT_DIR$/src/modelos/Jugador.java" />
         <option value="$PROJECT_DIR$/src/db/BaseDeDatos.java" />
-        <option value="$PROJECT_DIR$/src/modelos/Estadistica.java" />
-        <option value="$PROJECT_DIR$/src/modelos/Partido.java" />
         <option value="$PROJECT_DIR$/src/sample/Player.fxml" />
         <option value="$PROJECT_DIR$/src/sample/As.fxml" />
         <option value="$PROJECT_DIR$/src/sample/ControllerEquipo.java" />
         <option value="$PROJECT_DIR$/src/sample/Jugador.fxml" />
         <option value="$PROJECT_DIR$/src/sample/ControllerPlayer.java" />
-        <option value="$PROJECT_DIR$/src/db/AccesToData.java" />
         <option value="$PROJECT_DIR$/src/sample/Main.java" />
+        <option value="$PROJECT_DIR$/src/db/AccesToData.java" />
+        <option value="$PROJECT_DIR$/src/modelos/Equipo.java" />
+        <option value="$PROJECT_DIR$/src/modelos/Estadistica.java" />
+        <option value="$PROJECT_DIR$/src/modelos/Jugador.java" />
+        <option value="$PROJECT_DIR$/src/modelos/Partido.java" />
       </list>
     </option>
   </component>
@@ -387,7 +353,7 @@
       <workItem from="1559085144517" duration="1468000" />
       <workItem from="1559122484592" duration="21936000" />
       <workItem from="1559164063118" duration="6098000" />
-      <workItem from="1559172495510" duration="481000" />
+      <workItem from="1559172495510" duration="678000" />
     </task>
     <task id="LOCAL-00001" summary="All good">
       <created>1558918368717</created>
@@ -431,14 +397,22 @@
       <option name="project" value="LOCAL" />
       <updated>1559167272401</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="All good">
+      <created>1559173032768</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1559173032768</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89138000" />
+    <option name="totallyTimeSpent" value="89335000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.21903323" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -559,23 +533,13 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <MESSAGE value="All good" />
     <option name="LAST_COMMIT_MESSAGE" value="All good" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/db/AccesToData.java</url>
-          <line>219</line>
-          <properties />
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -720,42 +684,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/modelos/Equipo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/db/BaseDeDatos.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modelos/Estadistica.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modelos/Jugador.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modelos/Partido.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="e#2439#2440#0" expanded="true" />
-            <element signature="e#2509#2510#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -823,24 +755,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/player.fxml" />
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="31" column="60" selection-start-line="31" selection-start-column="60" selection-end-line="31" selection-end-column="60" />
-          <folding>
-            <element signature="e#404#405#0" expanded="true" />
-            <element signature="e#432#433#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/db/AccesToData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3285">
-          <caret line="227" column="9" selection-start-line="227" selection-start-column="9" selection-end-line="227" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/ControllerPlayer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1095">
@@ -853,11 +767,61 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Jugador.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1500">
-          <caret line="100" column="93" selection-start-line="100" selection-start-column="93" selection-end-line="100" selection-end-column="93" />
+        <state relative-caret-position="1275">
+          <caret line="93" column="97" selection-start-line="93" selection-start-column="97" selection-end-line="93" selection-end-column="97" />
         </state>
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/db/AccesToData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="14" column="72" lean-forward="true" selection-start-line="14" selection-start-column="72" selection-end-line="14" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="31" column="60" selection-start-line="31" selection-start-column="60" selection-end-line="31" selection-end-column="60" />
+          <folding>
+            <element signature="e#404#405#0" expanded="true" />
+            <element signature="e#432#433#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modelos/Equipo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modelos/Estadistica.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modelos/Jugador.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modelos/Partido.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+          <folding>
+            <element signature="e#2439#2440#0" expanded="true" />
+            <element signature="e#2509#2510#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">

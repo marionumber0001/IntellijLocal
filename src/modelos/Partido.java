@@ -14,6 +14,10 @@ public class Partido {
     public IntegerProperty puntosVisitante;
     public StringProperty temporada;
 
+    public Partido() {
+
+    }
+
     public Partido(ResultSet result) throws Exception {
         setCodigo(result.getInt("codigo"));
         setEquipoLocal(result.getString("equipo_local"));

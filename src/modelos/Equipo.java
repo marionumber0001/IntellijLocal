@@ -12,6 +12,10 @@ public class Equipo {
     private StringProperty conferencia;
     private StringProperty division;
 
+    public Equipo() {
+
+    }
+
     public Equipo(ResultSet resultado) throws Exception {
         this.nombre = new SimpleStringProperty(resultado.getString("Nombre"));
         this.ciudad = new SimpleStringProperty(resultado.getString("Ciudad"));

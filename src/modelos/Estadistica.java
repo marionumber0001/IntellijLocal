@@ -15,6 +15,10 @@ public class Estadistica {
     private FloatProperty taponesPorPartido;
     private FloatProperty rebotesPorPartido;
 
+    public Estadistica() {
+
+    }
+
     public Estadistica(ResultSet result) throws Exception {
         setTemporada(result.getString("temporada"));
         setJugador(result.getInt("jugador"));

@@ -18,6 +18,10 @@ public class Jugador {
     private StringProperty posicion;
     private StringProperty nombre_equipo;
 
+    public Jugador() {
+
+    }
+
     public Jugador(ResultSet resultado) throws Exception {
         this.codigo = new SimpleIntegerProperty(resultado.getInt("codigo"));
         this.nombre = new SimpleStringProperty(resultado.getString("Nombre"));
