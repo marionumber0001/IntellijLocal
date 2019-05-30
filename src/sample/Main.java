@@ -38,6 +38,8 @@ public class Main extends Application {
         primaryStage.setTitle("NBA");
 
         Scene scene = new Scene(decorator, 750, 500);
+        primaryStage.setMaxWidth(750);
+        primaryStage.setMaxHeight(500);
         primaryStage.setMinWidth(750);
         primaryStage.setMinHeight(500);
         String uri = instancia.getClass().getResource("../css/ph.css").toExternalForm();
@@ -45,5 +47,7 @@ public class Main extends Application {
 
         primaryStage.setScene(scene);
         primaryStage.show();
+
+
     }
 }

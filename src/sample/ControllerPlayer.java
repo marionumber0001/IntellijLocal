@@ -21,16 +21,25 @@ public class ControllerPlayer implements Initializable {
     private static AccesToData accesToData = new AccesToData();
 
     public ListView pyListViewTotal;
+    public ListView pyListViewTeam;
     public TextField pySearcher;
+
     public Label pyLabelNameTeam;
+    public Label pyLabelAltura;
+    public Label pyLabelProcedencia;
+    public Label pyLabelEquipo;
+    public Label pyLabelPosicion;
+    public Label pyLabelPeso;
+
     private ObservableList<String> items = FXCollections.observableArrayList();
+    private ObservableList<String> itemsJug = FXCollections.observableArrayList();
 
     /*
-    public TableView<ArrayList<String>> fTable;
-    public TableColumn<ArrayList<String>, String> fJatributo = new TableColumn<>("");
-    public TableColumn<ArrayList<String>, String> fJvalor = new TableColumn<>("");
-    private ObservableList<ArrayList<String>> jData = FXCollections.observableArrayList();
-     */
+public TableView<ArrayList<String>> fTable;
+public TableColumn<ArrayList<String>, String> fJatributo = new TableColumn<>("");
+public TableColumn<ArrayList<String>, String> fJvalor = new TableColumn<>("");
+private ObservableList<ArrayList<String>> jData = FXCollections.observableArrayList();
+*/
 
     public void linkJugadores(ActionEvent actionEvent) {
         Main.SetScene("Jugador.fxml");
@@ -40,37 +49,46 @@ public class ControllerPlayer implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         /*
-        fJatributo.setCellValueFactory(e -> Bindings.createStringBinding(() -> e.getValue().get(0)));
-        fJvalor.setCellValueFactory(e -> Bindings.createStringBinding(() -> e.getValue().get(1)));
-        fTable.getColumns().addAll(fJatributo, fJvalor);
-         */
+fJatributo.setCellValueFactory(e -> Bindings.createStringBinding(() -> e.getValue().get(0)));
+fJvalor.setCellValueFactory(e -> Bindings.createStringBinding(() -> e.getValue().get(1)));
+fTable.getColumns().addAll(fJatributo, fJvalor);
+*/
         cargaListView(accesToData.getJugadores());
     }
 
     //Esta funcion se debe ejecutar al hacer click en un jugador
     public void click(String nom) {
-       /* jData.clear();
+        var jugador = accesToData.getJugador(nom);
+        cargaListViewJug(accesToData.getJugadorFromEquipo(jugador.getNombre_equipo()));
 
-        var jug = accesToData.getJugador(nom);
+        pyLabelNameTeam.setText(jugador.getNombre());
+        pyLabelEquipo.setText(jugador.getNombre_equipo());
+        pyLabelAltura.setText(jugador.getAltura());
+        pyLabelPeso.setText(jugador.getPeso() + " lbs");
+        pyLabelProcedencia.setText(jugador.getProcedencia());
+        pyLabelPosicion.setText(jugador.getPosicion());
+        /* jData.clear();
 
-        BiFunction<String, String, Boolean> function = (String tipo, String valor) -> {
-            ArrayList<String> nombre = new ArrayList<>();
-            nombre.add(tipo);
-            nombre.add(valor);
-            jData.add(nombre);
+var jug = accesToData.getJugador(nom);
 
-            return true;
-        };
+BiFunction<String, String, Boolean> function = (String tipo, String valor) -> {
+ArrayList<String> nombre = new ArrayList<>();
+nombre.add(tipo);
+nombre.add(valor);
+jData.add(nombre);
 
-        function.apply("NOMBRE", jug.getNombre());
-        function.apply("PROCEDENCIA", jug.getProcedencia());
-        function.apply("ALTURA", jug.getAltura());
-        function.apply("PESO", jug.getPeso() + " lbs");
-        function.apply("POSICIÓN", jug.getPosicion());
+return true;
+};
 
-        fTable.setItems(jData);
+function.apply("NOMBRE", jug.getNombre());
+function.apply("PROCEDENCIA", jug.getProcedencia());
+function.apply("ALTURA", jug.getAltura());
+function.apply("PESO", jug.getPeso() + " lbs");
+function.apply("POSICIÓN", jug.getPosicion());
 
-        */
+fTable.setItems(jData);
+
+*/
 
         //Sucesivamente con todas las propieadades
     }
@@ -96,9 +114,31 @@ public class ControllerPlayer implements Initializable {
         FXCollections.sort(items);
     }
 
+    private void cargaListViewJug(ArrayList<Jugador> aux) {
+        itemsJug.clear();
+
+        for (var jug : aux) {
+            itemsJug.add(jug.toString());
+        }
+        pyListViewTeam.setItems(itemsJug);
+        FXCollections.sort(itemsJug);
+    }
+
     public void clickModificar(ActionEvent actionEvent) {
     }
 
     public void clickEliminar(ActionEvent actionEvent) {
+    }
+
+    public void linkJugadorJug(MouseEvent mouseEvent) {
+        click(pyListViewTeam.getSelectionModel().getSelectedItem().toString());
+    }
+
+    public void linkEquipos(ActionEvent actionEvent) {
+        Main.SetScene("Equipo.fxml");
+    }
+
+    public void linkPartidos(ActionEvent actionEvent) {
+        Main.SetScene("Partidos.fxml");
     }
 }

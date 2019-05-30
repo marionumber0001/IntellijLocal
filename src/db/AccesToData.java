@@ -14,7 +14,7 @@ public class AccesToData {
 
     private static BaseDeDatos baseDeDatos = BaseDeDatos.getInstancia();
 
-    ///////////////////////////////         JUGADORES          /////////////////////////////////////////////////
+    /////////////////////////////// JUGADORES /////////////////////////////////////////////////
     public ArrayList<Jugador> getJugadores() {
         try {
             ArrayList<Jugador> jugadors = new ArrayList<Jugador>();
@@ -82,7 +82,69 @@ public class AccesToData {
         }
     }
 
-    //////////////////////////////        EQUIPO         ///////////////////////////////////////////////
+    public boolean insertJugador(Jugador jug) {
+        try {
+            var statement = baseDeDatos.conectarMySQL().prepareStatement("SELECT MAX(codigo) AS id FROM jugadores");
+            var resultado = statement.executeQuery();
+
+            resultado.next();
+            int id = resultado.getInt("id");
+
+            statement = baseDeDatos.conectarMySQL().prepareStatement(
+                    String.format(
+                            "INSERT INTO jugadores (codigo,Nombre,Procedencia,Altura,Peso,Posicion,Nombre_equipo)" +
+                                    "VALUES (%s , %s , %s , %s , %s, %s, %s)",
+                            id, jug.getNombre(), jug.getProcedencia(), jug.getAltura(), jug.getPeso(), jug.getPosicion(), jug.getNombre_equipo()
+                    )
+            );
+            statement.executeUpdate();
+
+            return true;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+
+    public void updateJugador(Jugador update) {
+        BiFunction<String, String, Boolean> function = (String campo, String valor) ->
+        {
+            try {
+                var statement = baseDeDatos.conectarMySQL().prepareStatement(
+                        "UPDATE jugadores SET " + campo + " = " + valor + " WHERE codigo = " + update.getCodigo()
+                );
+                statement.executeUpdate();
+                return true;
+            } catch (Exception e) {
+                e.printStackTrace();
+                return false;
+            }
+        };
+
+        Jugador jugador = getJugador(update.getCodigo());
+
+        if (jugador.getNombre() != update.getNombre()) function.apply("Nombre", "'" + update.getNombre() + "'");
+        if (jugador.getNombre_equipo() != update.getNombre_equipo())
+            function.apply("Nombre_equipo", "'" + update.getNombre_equipo() + "'");
+        if (jugador.getAltura() != update.getAltura()) function.apply("Altura", "'" + update.getAltura() + "'");
+        if (jugador.getPeso() != update.getPeso()) function.apply("Peso", String.valueOf(update.getPeso()));
+        if (jugador.getPosicion() != update.getPosicion()) function.apply("Posicion", "'" + update.getPosicion() + "'");
+        if (jugador.getProcedencia() != update.getProcedencia())
+            function.apply("Procedencia", "'" + update.getProcedencia() + "'");
+    }
+
+    public boolean deleteJugador(int id) {
+        try {
+            var statement = baseDeDatos.conectarMySQL().prepareStatement("DELETE FROM jugadores WHERE codigo LIKE " + id);
+            var resultado = statement.executeUpdate();
+            return true;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+
+    ////////////////////////////// EQUIPO ///////////////////////////////////////////////
     public ArrayList<Equipo> getEquipos() {
         try {
             ArrayList<Equipo> equipos = new ArrayList<>();
@@ -116,10 +178,27 @@ public class AccesToData {
         }
     }
 
-    ////////////////////////        PARTIDO       /////////////////////////////
+    //////////////////////// PARTIDO /////////////////////////////
     public Partido getPartido(int id) {
         try {
             var statement = baseDeDatos.conectarMySQL().prepareStatement("SELECT * FROM partidos WHERE codigo LIKE " + id);
+            var resultado = statement.executeQuery();
+
+            if (resultado.next())
+                return new Partido(resultado);
+            else return null;
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
+    public Partido getPartido(String visitante, String local) {
+        try {
+            var statement = baseDeDatos.conectarMySQL().prepareStatement(
+                    "SELECT * FROM partidos WHERE equipo_local LIKE '" + local + "'" + "AND equipo_visitante LIKE '" + visitante + "'"
+            );
             var resultado = statement.executeQuery();
 
             if (resultado.next())
@@ -150,7 +229,7 @@ public class AccesToData {
         }
     }
 
-    ////////////////////////        ESTADISTICAS       ////////////////////////////
+    //////////////////////// ESTADISTICAS ////////////////////////////
     public ArrayList<Estadistica> getEstadisticas() {
         try {
             ArrayList<Estadistica> estadisticas = new ArrayList<>();
@@ -184,7 +263,7 @@ public class AccesToData {
         }
     }
 
-    /////////////////////////////      ALGORITMOS DE BUSQUEDA     ////////////////////////
+    ///////////////////////////// ALGORITMOS DE BUSQUEDA ////////////////////////
     public ArrayList<Jugador> buscarJugadores(String busqueda) {
 
         ArrayList<Jugador> jugadors = new ArrayList<>();
@@ -264,4 +343,3 @@ public class AccesToData {
         return equipos;
     }
 }
-
