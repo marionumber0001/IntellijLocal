@@ -19,7 +19,13 @@ public class Jugador {
     private StringProperty nombre_equipo;
 
     public Jugador() {
-
+        this.codigo = new SimpleIntegerProperty();
+        this.nombre = new SimpleStringProperty();
+        this.procedencia = new SimpleStringProperty();
+        this.altura = new SimpleStringProperty();
+        this.peso = new SimpleIntegerProperty();
+        this.posicion = new SimpleStringProperty();
+        this.nombre_equipo = new SimpleStringProperty();
     }
 
     public Jugador(ResultSet resultado) throws Exception {

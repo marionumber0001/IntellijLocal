@@ -1,8 +1,6 @@
 package modelos;
 
-import javafx.beans.property.FloatProperty;
-import javafx.beans.property.IntegerProperty;
-import javafx.beans.property.StringProperty;
+import javafx.beans.property.*;
 
 import java.sql.ResultSet;
 
@@ -20,12 +18,12 @@ public class Estadistica {
     }
 
     public Estadistica(ResultSet result) throws Exception {
-        setTemporada(result.getString("temporada"));
-        setJugador(result.getInt("jugador"));
-        setPuntosPorPartido(result.getFloat("Puntos_por_partido"));
-        setAsistenciasPorPartido(result.getFloat("Asistencias_por_partido"));
-        setTaponesPorPartido(result.getFloat("Asistencias_por_partido"));
-        setRebotesPorPartido(result.getFloat("Rebotes_por_partido"));
+        temporada = new SimpleStringProperty(result.getString("temporada"));
+        jugador = new SimpleIntegerProperty(result.getInt("jugador"));
+        puntosPorPartido = new SimpleFloatProperty(result.getFloat("Puntos_por_partido"));
+        asistenciasPorPartido = new SimpleFloatProperty(result.getFloat("Asistencias_por_partido"));
+        taponesPorPartido = new SimpleFloatProperty(result.getFloat("Tapones_por_partido"));
+        rebotesPorPartido = new SimpleFloatProperty(result.getFloat("Rebotes_por_partido"));
     }
 
     public String getTemporada() {

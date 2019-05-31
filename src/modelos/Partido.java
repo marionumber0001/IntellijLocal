@@ -1,6 +1,8 @@
 package modelos;
 
 import javafx.beans.property.IntegerProperty;
+import javafx.beans.property.SimpleIntegerProperty;
+import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 
 import java.sql.ResultSet;
@@ -15,16 +17,21 @@ public class Partido {
     public StringProperty temporada;
 
     public Partido() {
-
+        codigo = new SimpleIntegerProperty();
+        equipoLocal = new SimpleStringProperty();
+        equipoVisitante = new SimpleStringProperty();
+        puntosLocal = new SimpleIntegerProperty();
+        puntosVisitante = new SimpleIntegerProperty();
+        temporada = new SimpleStringProperty();
     }
 
     public Partido(ResultSet result) throws Exception {
-        setCodigo(result.getInt("codigo"));
-        setEquipoLocal(result.getString("equipo_local"));
-        setEquipoVisitante(result.getString("equipo_visitante"));
-        setPuntosLocal(result.getInt("equipo_visitante"));
-        setPuntosVisitante(result.getInt("puntos_visitante"));
-        setTemporada(result.getString("temporada"));
+        codigo = new SimpleIntegerProperty(result.getInt("codigo"));
+        equipoLocal = new SimpleStringProperty(result.getString("equipo_local"));
+        equipoVisitante = new SimpleStringProperty("equipo_visitante");
+        puntosLocal = new SimpleIntegerProperty(result.getInt("puntos_local"));
+        puntosVisitante = new SimpleIntegerProperty(result.getInt("puntos_visitante"));
+        temporada = new SimpleStringProperty(result.getString("temporada"));
     }
 
     public int getCodigo() {

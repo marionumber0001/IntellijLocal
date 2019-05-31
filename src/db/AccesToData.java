@@ -88,12 +88,12 @@ public class AccesToData {
             var resultado = statement.executeQuery();
 
             resultado.next();
-            int id = resultado.getInt("id");
+            int id = resultado.getInt("id")+1;
 
             statement = baseDeDatos.conectarMySQL().prepareStatement(
                     String.format(
                             "INSERT INTO jugadores (codigo,Nombre,Procedencia,Altura,Peso,Posicion,Nombre_equipo)" +
-                                    "VALUES (%s , %s , %s , %s , %s, %s, %s)",
+                                    "VALUES (%s , '%s' , '%s' , '%s' , %s, '%s', '%s')",
                             id, jug.getNombre(), jug.getProcedencia(), jug.getAltura(), jug.getPeso(), jug.getPosicion(), jug.getNombre_equipo()
                     )
             );
@@ -178,6 +178,26 @@ public class AccesToData {
         }
     }
 
+    public ArrayList<Equipo> getEquiposFromLocal(String local)
+    {
+        try {
+            ArrayList<Equipo> equipos = new ArrayList<>();
+
+            var statement = baseDeDatos.conectarMySQL().prepareStatement
+                    ("SELECT DISTINCT Nombre, Ciudad, Conferencia, Division FROM equipos INNER JOIN partidos ON equipo_visitante LIKE Nombre WHERE equipo_local LIKE '" + local + "'" );
+            var resultado = statement.executeQuery();
+
+            while (resultado.next())
+                equipos.add(new Equipo(resultado));
+
+            return equipos;
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+
     //////////////////////// PARTIDO /////////////////////////////
     public Partido getPartido(int id) {
         try {
@@ -194,16 +214,19 @@ public class AccesToData {
         }
     }
 
-    public Partido getPartido(String visitante, String local) {
+    public ArrayList<Partido> getPartido(String visitante, String local) {
         try {
+            ArrayList<Partido> partidos = new ArrayList<>();
+
             var statement = baseDeDatos.conectarMySQL().prepareStatement(
                     "SELECT * FROM partidos WHERE equipo_local LIKE '" + local + "'" + "AND equipo_visitante LIKE '" + visitante + "'"
             );
             var resultado = statement.executeQuery();
 
-            if (resultado.next())
-                return new Partido(resultado);
-            else return null;
+            while (resultado.next())
+                partidos.add(new Partido(resultado));
+
+            return partidos;
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -248,14 +271,17 @@ public class AccesToData {
         }
     }
 
-    public Estadistica getEstadistica(int jugador, String temporada) {
+    public  ArrayList<Estadistica> getEstadisticas(int jugador, String temporada) {
         try {
-            var statement = baseDeDatos.conectarMySQL().prepareStatement("SELECT * FROM estadisticas WHERE temporada = '" + temporada + "' AND jugador LIKE " + jugador);
+            ArrayList<Estadistica> estadisticas = new ArrayList<>();
+
+            var statement = baseDeDatos.conectarMySQL().prepareStatement("SELECT * FROM estadisticas WHERE temporada LIKE '" + temporada + "' AND jugador LIKE " + jugador);
             var resultado = statement.executeQuery();
 
-            if (resultado.next())
-                return new Estadistica(resultado);
-            else return null;
+            while (resultado.next())
+                estadisticas.add(new Estadistica(resultado));
+
+            return estadisticas;
 
         } catch (Exception e) {
             e.printStackTrace();

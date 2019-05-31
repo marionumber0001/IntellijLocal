@@ -7,11 +7,16 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import modelos.Equipo;
+import modelos.Jugador;
 
+import java.awt.*;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
@@ -23,17 +28,19 @@ public class ControllerEquipo implements Initializable {
     public JFXButton botonNavPartido;
     public MenuButton botonNavModificacion;
     public Label eLabelNomEquipo;
-    public ListView eListView;
     public Label eLabelConferencia;
     public Label eLabelDivision;
-    public TableView fTable;
     public JFXButton botonNavJugador;
     public TextField eFieldSearcher;
-    private ObservableList<String> items = FXCollections.observableArrayList();
+    public ListView eListView;
 
-    public void linkJugadores(ActionEvent actionEvent) {
-        Main.SetScene("Jugador.fxml");
-    }
+    public TableColumn<Jugador, String> nombre = new TableColumn<>("Nombre");
+    public TableColumn<Jugador, String> procedencia = new TableColumn<>("Procednecia");
+    public TableColumn<Jugador, String> posicion = new TableColumn<>("Posición");
+    public TableView<Jugador> fTable;
+
+    private ObservableList<Jugador> itemsTabla = FXCollections.observableArrayList();
+    private ObservableList<String> items = FXCollections.observableArrayList();
 
     public void clickModificar(ActionEvent actionEvent) {
     }
@@ -41,11 +48,10 @@ public class ControllerEquipo implements Initializable {
     public void clickEliminar(ActionEvent actionEvent) {
     }
 
-    public void elinkJugador(MouseEvent mouseEvent) {
-        click(eListView.getSelectionModel().getSelectedItem().toString());
-    }
-
-    private void click(String toString) {
+    private void click(String equipo) {
+        var list = accesToData.getJugadorFromEquipo(equipo);
+        itemsTabla.clear();
+        itemsTabla.addAll(list);
     }
 
     public void eKeyPress(KeyEvent keyEvent) {
@@ -57,6 +63,13 @@ public class ControllerEquipo implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         cargaListView(accesToData.getEquipos());
+
+        nombre.setCellValueFactory(new PropertyValueFactory<Jugador, String>("nombre"));
+        procedencia.setCellValueFactory(new PropertyValueFactory<Jugador, String>("procedencia"));
+        posicion.setCellValueFactory(new PropertyValueFactory<Jugador, String>("posicion"));
+
+        fTable.getColumns().addAll(nombre, procedencia, posicion);
+        fTable.setItems(itemsTabla);
     }
 
     private void cargaListView(ArrayList<Equipo> aux) {
@@ -69,5 +82,27 @@ public class ControllerEquipo implements Initializable {
         FXCollections.sort(items);
     }
 
+    public void elinkEquipo(MouseEvent mouseEvent) {
+        click(eListView.getSelectionModel().getSelectedItem().toString());
+    }
 
+    public void linkEquipos(ActionEvent actionEvent) {
+        Main.SetScene("Equipo.fxml");
+    }
+
+    public void linkPartidos(ActionEvent actionEvent) {
+        Main.SetScene("Partidos.fxml");
+    }
+
+    public void linkAltaJugadores(ActionEvent actionEvent) {
+        Main.SetScene("AltaJugador.fxml");
+    }
+
+    public void linkJugadores(ActionEvent actionEvent) {
+        Main.SetScene("Jugador.fxml");
+    }
+
+    public void linkAltaEquipos(ActionEvent actionEvent) {
+        Main.SetScene("AltaEquipo.fxml");
+    }
 }
