@@ -19,29 +19,24 @@ import java.util.ArrayList;
 import java.util.ResourceBundle;
 
 public class ControllerPartidos implements Initializable {
-    private AccesToData accesToData = new AccesToData();
-
     public ListView pListViewLocal;
     public ListView pListViewVisitante;
-
     public Label pLabelShowTeamLocal;
     public Label pLabelShowTeamVisitante;
-
-    public TableColumn<Partido,String> puntosLocal = new TableColumn<>("Puntos Local");
-    public TableColumn<Partido,String> puntosVisitante = new TableColumn<>("Puntos Visitante");
-    public TableColumn<Partido,String> temporada = new TableColumn<>("Temporada");
-
+    public TableColumn<Partido, String> puntosLocal = new TableColumn<>("Puntos Local");
+    public TableColumn<Partido, String> puntosVisitante = new TableColumn<>("Puntos Visitante");
+    public TableColumn<Partido, String> temporada = new TableColumn<>("Temporada");
+    public TableView pTableView;
+    private AccesToData accesToData = new AccesToData();
     private ObservableList<String> itemsLocal = FXCollections.observableArrayList();
     private ObservableList<String> itemsVisiante = FXCollections.observableArrayList();
     private ObservableList<Partido> itemsTabla = FXCollections.observableArrayList();
 
-    public TableView pTableView;
-
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        puntosLocal.setCellValueFactory(new PropertyValueFactory<Partido,String>("puntosLocal"));
-        puntosVisitante.setCellValueFactory(new PropertyValueFactory<Partido,String>("puntosVisitante"));
-        temporada.setCellValueFactory(new PropertyValueFactory<Partido,String>("temporada"));
+        puntosLocal.setCellValueFactory(new PropertyValueFactory<Partido, String>("puntosLocal"));
+        puntosVisitante.setCellValueFactory(new PropertyValueFactory<Partido, String>("puntosVisitante"));
+        temporada.setCellValueFactory(new PropertyValueFactory<Partido, String>("temporada"));
 
         pTableView.getColumns().addAll(puntosLocal, puntosVisitante, temporada);
         pTableView.setItems(itemsTabla);

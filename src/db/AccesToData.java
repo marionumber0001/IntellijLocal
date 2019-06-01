@@ -88,7 +88,7 @@ public class AccesToData {
             var resultado = statement.executeQuery();
 
             resultado.next();
-            int id = resultado.getInt("id")+1;
+            int id = resultado.getInt("id") + 1;
 
             statement = baseDeDatos.conectarMySQL().prepareStatement(
                     String.format(
@@ -178,13 +178,12 @@ public class AccesToData {
         }
     }
 
-    public ArrayList<Equipo> getEquiposFromLocal(String local)
-    {
+    public ArrayList<Equipo> getEquiposFromLocal(String local) {
         try {
             ArrayList<Equipo> equipos = new ArrayList<>();
 
             var statement = baseDeDatos.conectarMySQL().prepareStatement
-                    ("SELECT DISTINCT Nombre, Ciudad, Conferencia, Division FROM equipos INNER JOIN partidos ON equipo_visitante LIKE Nombre WHERE equipo_local LIKE '" + local + "'" );
+                    ("SELECT DISTINCT Nombre, Ciudad, Conferencia, Division FROM equipos INNER JOIN partidos ON equipo_visitante LIKE Nombre WHERE equipo_local LIKE '" + local + "'");
             var resultado = statement.executeQuery();
 
             while (resultado.next())
@@ -195,6 +194,58 @@ public class AccesToData {
         } catch (Exception e) {
             e.printStackTrace();
             return null;
+        }
+    }
+
+    public boolean insertEquipo(Equipo equip) {
+        try {
+            var statement = baseDeDatos.conectarMySQL().prepareStatement(
+                    String.format(
+                            "INSERT INTO equipos (Nombre,Ciudad,Conferencia,Division)" +
+                                    "VALUES ('%s' , '%s' , '%s' , '%s')",
+                            equip.getNombre(), equip.getCiudad(), equip.getConferencia(), equip.getDivision()
+                    )
+            );
+            statement.executeUpdate();
+
+            return true;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
+
+    public void updateEquipo(Equipo update) {
+        BiFunction<String, String, Boolean> function = (String campo, String valor) ->
+        {
+            try {
+                var statement = baseDeDatos.conectarMySQL().prepareStatement(
+                        "UPDATE equipos SET " + campo + " = " + valor + " WHERE Nombre = '" + update.getNombre() + "'"
+                );
+                statement.executeUpdate();
+                return true;
+            } catch (Exception e) {
+                e.printStackTrace();
+                return false;
+            }
+        };
+
+        Equipo equipo = getEquipo(update.getNombre());
+
+        if (equipo.getCiudad() != update.getCiudad()) function.apply("Ciudad", "'" + update.getCiudad() + "'");
+        if (equipo.getConferencia() != update.getConferencia())
+            function.apply("Conferencia", "'" + update.getConferencia() + "'");
+        if (equipo.getDivision() != update.getDivision()) function.apply("Division", "'" + update.getDivision() + "'");
+    }
+
+    public boolean deleteEquipo(String nombre) {
+        try {
+            var statement = baseDeDatos.conectarMySQL().prepareStatement("DELETE FROM equipos WHERE Nombre LIKE '" + nombre + "'");
+            statement.executeUpdate();
+            return true;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
         }
     }
 
@@ -271,7 +322,7 @@ public class AccesToData {
         }
     }
 
-    public  ArrayList<Estadistica> getEstadisticas(int jugador, String temporada) {
+    public ArrayList<Estadistica> getEstadisticas(int jugador, String temporada) {
         try {
             ArrayList<Estadistica> estadisticas = new ArrayList<>();
 

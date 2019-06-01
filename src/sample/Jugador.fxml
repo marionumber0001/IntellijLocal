@@ -18,9 +18,8 @@
                 <ListView fx:id="pyListViewTotal" layoutX="1.0" layoutY="83.0" onMouseClicked="#linkJugador"
                           prefHeight="405.0" prefWidth="202.0" styleClass="listaVista" AnchorPane.bottomAnchor="0.0"
                           AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="548.0" AnchorPane.topAnchor="83.0"/>
-                <ButtonBar layoutX="142.0" layoutY="34.0" prefHeight="40.0" prefWidth="468.0"
-                           AnchorPane.topAnchor="14.0" xmlns="http://javafx.com/javafx/11.0.1"
-                           xmlns:fx="http://javafx.com/fxml/1">
+                <ButtonBar xmlns:fx="http://javafx.com/fxml/1" layoutX="142.0" layoutY="34.0" prefHeight="40.0"
+                           prefWidth="468.0" AnchorPane.topAnchor="14.0" xmlns="http://javafx.com/javafx/11.0.1">
                     <buttons>
                         <JFXButton fx:id="botonNavEquipo" alignment="CENTER" buttonType="RAISED" onAction="#linkEquipos"
                                    prefHeight="25.0" prefWidth="110.0" styleClass="botonNav" text="EQUIPOS">
@@ -90,13 +89,13 @@
                     <children>
                         <Label fx:id="pyLabelNameTeam" layoutX="120.0" layoutY="77.0" prefHeight="18.0"
                                prefWidth="202.0" styleClass="anchorLabelGR" AnchorPane.bottomAnchor="22.0"
-                               AnchorPane.leftAnchor="120.0" AnchorPane.rightAnchor="227.0"/>
+                               AnchorPane.leftAnchor="120.0" AnchorPane.rightAnchor="230.0"/>
                         <Label fx:id="pyLabelAltura" layoutX="469.0" layoutY="35.0" prefHeight="17.0" prefWidth="54.0"
                                styleClass="anchorLabel" AnchorPane.bottomAnchor="61.0" AnchorPane.leftAnchor="490.0"
                                AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="35.0"/>
                         <Label fx:id="pyLabelProcedencia" layoutX="358.0" layoutY="78.0" prefHeight="18.0"
                                prefWidth="188.0" styleClass="anchorLabelGR" AnchorPane.bottomAnchor="22.0"
-                               AnchorPane.leftAnchor="358.0"/>
+                               AnchorPane.leftAnchor="358.0" AnchorPane.rightAnchor="0.0"/>
                         <Label fx:id="pyLabelEquipo" layoutX="120.0" layoutY="43.0" prefHeight="17.0" prefWidth="202.0"
                                styleClass="anchorLabelGR" AnchorPane.bottomAnchor="55.0"
                                AnchorPane.rightAnchor="227.0"/>
@@ -118,10 +117,9 @@
                           prefHeight="280.0" prefWidth="202.0" styleClass="listaVistaJ" AnchorPane.bottomAnchor="17.0"
                           AnchorPane.leftAnchor="201.0" AnchorPane.rightAnchor="346.0" AnchorPane.topAnchor="197.0"/>
                 <AreaChart fx:id="pyGrafica" layoutX="404.0" layoutY="167.0" prefHeight="282.0" prefWidth="346.0"
-                           AnchorPane.bottomAnchor="17.0" AnchorPane.rightAnchor="0.0"
-                           AnchorPane.topAnchor="201.0">
+                           AnchorPane.bottomAnchor="17.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="201.0">
                     <xAxis>
-                        <CategoryAxis fx:id="xAxis" side="BOTTOM"/>
+                        <CategoryAxis side="BOTTOM" fx:id="xAxis"/>
                     </xAxis>
                     <yAxis>
                         <NumberAxis fx:id="yAxis" side="LEFT"/>

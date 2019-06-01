@@ -72,22 +72,27 @@ public class ControllerAltaJugador implements Initializable {
     }
 
     public void linkJugadores(ActionEvent actionEvent) {
+        update = null;
         Main.SetScene("Jugador.fxml");
     }
 
     public void linkEquipos(ActionEvent actionEvent) {
+        update = null;
         Main.SetScene("Equipo.fxml");
     }
 
     public void linkPartidos(ActionEvent actionEvent) {
+        update = null;
         Main.SetScene("Partidos.fxml");
     }
 
     public void linkAltaJugadores(ActionEvent actionEvent) {
+        update = null;
         Main.SetScene("AltaJugador.fxml");
     }
 
     public void linkAltaEquipos(ActionEvent actionEvent) {
+        update = null;
         Main.SetScene("AltaEquipo.fxml");
     }
 }

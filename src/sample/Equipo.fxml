@@ -1,21 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
 <?import javafx.scene.Cursor?>
-<?import javafx.scene.control.ButtonBar?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ListView?>
-<?import javafx.scene.control.MenuButton?>
-<?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.control.TableView?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.ColumnConstraints?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.RowConstraints?>
-<?import javafx.scene.paint.RadialGradient?>
-<?import javafx.scene.paint.Stop?>
-
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
 <GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerEquipo">
     <children>
         <AnchorPane prefHeight="500.0" prefWidth="750.0" styleClass="anchorMain">
@@ -78,12 +67,21 @@
                     </buttons>
                 </ButtonBar>
                 <ListView fx:id="eListView" layoutX="1.0" layoutY="83.0" onMouseClicked="#elinkEquipo" prefHeight="405.0" prefWidth="202.0" styleClass="listaVista" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="548.0" AnchorPane.topAnchor="83.0" />
-                <AnchorPane layoutX="200.0" layoutY="89.0" prefHeight="113.0" prefWidth="550.0" styleClass="anchorPane" AnchorPane.bottomAnchor="304.0" AnchorPane.leftAnchor="201.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="83.0">
+                <AnchorPane layoutX="200.0" layoutY="89.0" prefHeight="113.0" prefWidth="550.0" styleClass="anchorPane"
+                            AnchorPane.leftAnchor="201.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="83.0">
                     <children>
-                        <Label fx:id="eLabelNomEquipo" layoutX="120.0" layoutY="77.0" prefHeight="18.0" prefWidth="110.0" styleClass="anchorLabelGR" text="HAWKS" />
-                        <Label fx:id="eLabelConferencia" layoutX="363.0" layoutY="89.0" styleClass="anchorLabel" text="CONFERENCIA" AnchorPane.bottomAnchor="7.0" AnchorPane.rightAnchor="108.0" />
-                        <Label fx:id="eLabelDivision" layoutX="485.0" layoutY="89.0" styleClass="anchorLabel" text="DIVISIÓN" AnchorPane.bottomAnchor="7.0" AnchorPane.rightAnchor="14.0" />
-                        <AnchorPane layoutX="14.0" layoutY="6.0" prefHeight="90.0" prefWidth="90.0" styleClass="teamIcon" AnchorPane.bottomAnchor="17.0" AnchorPane.rightAnchor="445.0" AnchorPane.topAnchor="6.0" />
+                        <Label fx:id="eLabelNomEquipo" layoutX="120.0" layoutY="77.0" prefHeight="18.0"
+                               prefWidth="110.0" styleClass="anchorLabelGR" AnchorPane.bottomAnchor="22.0"
+                               AnchorPane.leftAnchor="120.0" AnchorPane.rightAnchor="230.0"/>
+                        <Label fx:id="eLabelConferencia" layoutX="363.0" layoutY="89.0" styleClass="anchorLabel"
+                               AnchorPane.bottomAnchor="22.0" AnchorPane.leftAnchor="350.0"
+                               AnchorPane.rightAnchor="108.0"/>
+                        <Label fx:id="eLabelDivision" layoutX="461.0" layoutY="74.0" styleClass="anchorLabel"
+                               AnchorPane.bottomAnchor="22.0" AnchorPane.leftAnchor="461.0"
+                               AnchorPane.rightAnchor="0.0"/>
+                        <AnchorPane fx:id="Polla" layoutX="14.0" layoutY="6.0" prefHeight="90.0" prefWidth="90.0"
+                                    styleClass="teamIcon" AnchorPane.bottomAnchor="17.0" AnchorPane.rightAnchor="445.0"
+                                    AnchorPane.topAnchor="6.0"/>
                         <JFXButton layoutX="477.0" layoutY="6.0" onAction="#clickModificar" text="Modificar" />
                         <JFXButton layoutX="418.0" layoutY="6.0" onAction="#clickEliminar" text="Eliminar" />
                     </children>

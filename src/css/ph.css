@@ -54,9 +54,8 @@
     -fx-background-color: #022739;
 }
 
-
 .teamIcon {
-    -fx-background-image: url(../images/at.png);
+    -fx-background-image: url(../images/76ers.png);
     -fx-background-repeat: no-repeat;
     -fx-background-size: cover, auto;
 }

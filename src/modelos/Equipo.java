@@ -13,7 +13,10 @@ public class Equipo {
     private StringProperty division;
 
     public Equipo() {
-
+        this.nombre = new SimpleStringProperty();
+        this.ciudad = new SimpleStringProperty();
+        this.conferencia = new SimpleStringProperty();
+        this.division = new SimpleStringProperty();
     }
 
     public Equipo(ResultSet resultado) throws Exception {

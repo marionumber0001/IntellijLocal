@@ -7,8 +7,6 @@ import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
@@ -16,7 +14,6 @@ import javafx.scene.input.MouseEvent;
 import modelos.Equipo;
 import modelos.Jugador;
 
-import java.awt.*;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
@@ -43,15 +40,24 @@ public class ControllerEquipo implements Initializable {
     private ObservableList<String> items = FXCollections.observableArrayList();
 
     public void clickModificar(ActionEvent actionEvent) {
+        ControllerAltaEquipo.setEquipo(accesToData.getEquipo(eLabelNomEquipo.getText()));
+        Main.SetScene("AltaEquipo.fxml");
     }
 
     public void clickEliminar(ActionEvent actionEvent) {
+        accesToData.deleteEquipo(eLabelNomEquipo.getText());
+        Main.SetScene("Equipo.fxml");
     }
 
-    private void click(String equipo) {
-        var list = accesToData.getJugadorFromEquipo(equipo);
+    private void click(String nom) {
+        var list = accesToData.getJugadorFromEquipo(nom);
         itemsTabla.clear();
         itemsTabla.addAll(list);
+
+        var equipo = accesToData.getEquipo(nom);
+        eLabelNomEquipo.setText(equipo.getNombre());
+        eLabelConferencia.setText(equipo.getConferencia());
+        eLabelDivision.setText(equipo.getDivision());
     }
 
     public void eKeyPress(KeyEvent keyEvent) {
