@@ -41,6 +41,8 @@ public class ControllerPartidos implements Initializable {
         pTableView.getColumns().addAll(puntosLocal, puntosVisitante, temporada);
         pTableView.setItems(itemsTabla);
 
+        pTableView.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
+
         CargarLocal(accesToData.getEquipos());
     }
 

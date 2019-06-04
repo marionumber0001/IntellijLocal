@@ -5,23 +5,24 @@
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.paint.*?>
-<AnchorPane prefHeight="500.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/11.0.1"
-            xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerAltaEquipo">
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="500.0" prefWidth="750.0" styleClass="anchorMain"
+            xmlns="http://javafx.com/javafx/11.0.1" fx:controller="sample.ControllerAltaEquipo">
     <children>
-        <Label layoutX="125.0" layoutY="108.0" text="Nombre" AnchorPane.leftAnchor="125.0"
+        <Label layoutX="125.0" layoutY="108.0" styleClass="labelModify" text="Nombre" AnchorPane.leftAnchor="125.0"
                AnchorPane.topAnchor="105.0"/>
-        <Label layoutX="135.0" layoutY="118.0" text="Ciudad" AnchorPane.leftAnchor="400.0"
+        <Label layoutX="135.0" layoutY="118.0" styleClass="labelModify" text="Ciudad" AnchorPane.leftAnchor="400.0"
                AnchorPane.rightAnchor="285.0" AnchorPane.topAnchor="105.0"/>
-        <Label layoutX="145.0" layoutY="128.0" text="Conferencia" AnchorPane.leftAnchor="125.0"
+        <Label layoutX="145.0" layoutY="128.0" styleClass="labelModify" text="Conferencia" AnchorPane.leftAnchor="125.0"
                AnchorPane.topAnchor="180.0"/>
-        <Label layoutX="155.0" layoutY="138.0" text="División" AnchorPane.leftAnchor="400.0"
+        <Label layoutX="155.0" layoutY="138.0" styleClass="labelModify" text="División" AnchorPane.leftAnchor="400.0"
                AnchorPane.topAnchor="180.0"/>
-        <JFXButton layoutX="538.0" layoutY="349.0" onAction="#clickCancelar" text="Cancelar"
-                   AnchorPane.leftAnchor="538.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="349.0"/>
-        <JFXButton layoutX="438.0" layoutY="349.0" onAction="#clickAceptar" text="Aceptar" AnchorPane.leftAnchor="438.0"
-                   AnchorPane.rightAnchor="250.0" AnchorPane.topAnchor="349.0"/>
-        <ButtonBar layoutX="142.0" layoutY="34.0" prefHeight="40.0" prefWidth="468.0" AnchorPane.topAnchor="34.0"
-                   xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+        <JFXButton layoutX="538.0" layoutY="349.0" onAction="#clickCancelar" styleClass="botonNav" text="Cancelar"
+                   AnchorPane.leftAnchor="530.0" AnchorPane.rightAnchor="130.0" AnchorPane.topAnchor="350.0"/>
+        <JFXButton layoutX="438.0" layoutY="349.0" onAction="#clickAceptar" styleClass="botonNav" text="Aceptar"
+                   AnchorPane.leftAnchor="405.0" AnchorPane.rightAnchor="255.0" AnchorPane.topAnchor="350.0"/>
+        <ButtonBar xmlns:fx="http://javafx.com/fxml/1" layoutX="142.0" layoutY="34.0" prefHeight="40.0"
+                   prefWidth="468.0" AnchorPane.leftAnchor="125.0" AnchorPane.rightAnchor="150.0"
+                   AnchorPane.topAnchor="14.0" xmlns="http://javafx.com/javafx/11.0.1">
             <buttons>
                 <JFXButton fx:id="botonNavEquipo" alignment="CENTER" buttonType="RAISED" onAction="#linkEquipos"
                            prefHeight="25.0" prefWidth="110.0" styleClass="botonNav" text="EQUIPOS">

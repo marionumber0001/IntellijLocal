@@ -32,7 +32,7 @@ public class ControllerEquipo implements Initializable {
     public ListView eListView;
 
     public TableColumn<Jugador, String> nombre = new TableColumn<>("Nombre");
-    public TableColumn<Jugador, String> procedencia = new TableColumn<>("Procednecia");
+    public TableColumn<Jugador, String> procedencia = new TableColumn<>("Procedencia");
     public TableColumn<Jugador, String> posicion = new TableColumn<>("Posición");
     public TableView<Jugador> fTable;
 
@@ -76,6 +76,9 @@ public class ControllerEquipo implements Initializable {
 
         fTable.getColumns().addAll(nombre, procedencia, posicion);
         fTable.setItems(itemsTabla);
+
+        fTable.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
+
     }
 
     private void cargaListView(ArrayList<Equipo> aux) {

@@ -51,7 +51,7 @@ public class ControllerAltaJugador implements Initializable {
 
     public void clickCancelar(ActionEvent actionEvent) {
         update = null;
-        Main.SetScene("Equipo.fxml");
+        Main.SetScene("Jugador.fxml");
     }
 
     public void clickAceptar(ActionEvent actionEvent) {

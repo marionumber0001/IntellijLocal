@@ -5,104 +5,107 @@
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.paint.*?>
-<AnchorPane prefHeight="500.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/11.0.1"
-            xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerAltaJugador">
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="500.0" prefWidth="750.0" styleClass="anchorMain"
+            xmlns="http://javafx.com/javafx/11.0.1" fx:controller="sample.ControllerAltaJugador">
    <children>
-      <Label layoutX="125.0" layoutY="108.0" text="Nombre completo" AnchorPane.leftAnchor="125.0"
-             AnchorPane.topAnchor="105.0"/>
-      <Label layoutX="135.0" layoutY="118.0" prefHeight="17.0" prefWidth="98.0" text="Procedencia"
-             AnchorPane.leftAnchor="400.0" AnchorPane.rightAnchor="252.0" AnchorPane.topAnchor="105.0"/>
-      <Label layoutX="145.0" layoutY="128.0" text="Altura" AnchorPane.leftAnchor="125.0"
-             AnchorPane.topAnchor="180.0"/>
-      <Label layoutX="155.0" layoutY="138.0" text="Peso" AnchorPane.leftAnchor="400.0" AnchorPane.topAnchor="180.0"/>
-      <Label layoutX="155.0" layoutY="138.0" text="Posición" AnchorPane.leftAnchor="125.0"
-             AnchorPane.topAnchor="255.0"/>
-      <JFXButton layoutX="538.0" layoutY="349.0" onAction="#clickCancelar" prefHeight="17.0" prefWidth="80.0"
-                 text="Cancelar" AnchorPane.leftAnchor="538.0" AnchorPane.rightAnchor="132.0"
-                 AnchorPane.topAnchor="349.0"/>
-      <Label layoutX="165.0" layoutY="148.0" text="Equipo" AnchorPane.leftAnchor="400.0"
-             AnchorPane.topAnchor="255.0"/>
-      <JFXButton layoutX="438.0" layoutY="349.0" onAction="#clickAceptar" text="Aceptar" AnchorPane.leftAnchor="438.0"
-                 AnchorPane.rightAnchor="250.0" AnchorPane.topAnchor="349.0"/>
-      <ButtonBar layoutX="142.0" layoutY="34.0" prefHeight="40.0" prefWidth="468.0" AnchorPane.leftAnchor="125.0"
-                 AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="14.0">
+       <Label layoutX="125.0" layoutY="108.0" styleClass="labelModify" text="Nombre completo"
+              AnchorPane.leftAnchor="125.0" AnchorPane.topAnchor="105.0"/>
+       <Label layoutX="135.0" layoutY="118.0" prefHeight="17.0" prefWidth="98.0" styleClass="labelModify"
+              text="Procedencia" AnchorPane.leftAnchor="400.0" AnchorPane.rightAnchor="252.0"
+              AnchorPane.topAnchor="105.0"/>
+       <Label layoutX="145.0" layoutY="128.0" styleClass="labelModify" text="Altura" AnchorPane.leftAnchor="125.0"
+              AnchorPane.topAnchor="180.0"/>
+       <Label layoutX="155.0" layoutY="138.0" styleClass="labelModify" text="Peso" AnchorPane.leftAnchor="400.0"
+              AnchorPane.topAnchor="180.0"/>
+       <Label layoutX="155.0" layoutY="138.0" styleClass="labelModify" text="Posición" AnchorPane.leftAnchor="125.0"
+              AnchorPane.topAnchor="255.0"/>
+       <JFXButton layoutX="528.0" layoutY="349.0" onAction="#clickCancelar" prefHeight="25.0" prefWidth="90.0"
+                  styleClass="botonNav" text="Cancelar" AnchorPane.leftAnchor="530.0" AnchorPane.rightAnchor="130.0"
+                  AnchorPane.topAnchor="350.0"/>
+       <Label layoutX="165.0" layoutY="148.0" styleClass="labelModify" text="Equipo" AnchorPane.leftAnchor="400.0"
+              AnchorPane.topAnchor="255.0"/>
+       <JFXButton layoutX="404.0" layoutY="349.0" onAction="#clickAceptar" prefHeight="25.0" prefWidth="90.0"
+                  styleClass="botonNav" text="Aceptar" AnchorPane.leftAnchor="405.0" AnchorPane.rightAnchor="255.0"
+                  AnchorPane.topAnchor="350.0"/>
+       <ButtonBar layoutX="142.0" layoutY="34.0" prefHeight="40.0" prefWidth="468.0" AnchorPane.leftAnchor="125.0"
+                  AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="14.0">
          <buttons>
-            <JFXButton fx:id="botonNavEquipo" alignment="CENTER" buttonType="RAISED" onAction="#linkEquipos"
-                       prefHeight="25.0" prefWidth="110.0" styleClass="botonNav" text="EQUIPOS">
+             <JFXButton fx:id="botonNavEquipo" alignment="CENTER" buttonType="RAISED" onAction="#linkEquipos"
+                        prefHeight="25.0" prefWidth="110.0" styleClass="botonNav" text="EQUIPOS">
                <cursor>
-                  <Cursor fx:constant="HAND"/>
+                   <Cursor fx:constant="HAND"/>
                </cursor>
                <ripplerFill>
                   <RadialGradient centerX="0.5" centerY="0.5" radius="0.25">
                      <stops>
-                        <Stop color="BLACK"/>
-                        <Stop color="#0080ff" offset="1.0"/>
+                         <Stop color="BLACK"/>
+                         <Stop color="#0080ff" offset="1.0"/>
                      </stops>
                   </RadialGradient>
                </ripplerFill>
             </JFXButton>
-            <JFXButton fx:id="botonNavJugador" alignment="CENTER" buttonType="RAISED" onAction="#linkJugadores"
-                       prefHeight="25.0" prefWidth="110.0" styleClass="botonNav" text="JUGADORES">
+             <JFXButton fx:id="botonNavJugador" alignment="CENTER" buttonType="RAISED" onAction="#linkJugadores"
+                        prefHeight="25.0" prefWidth="110.0" styleClass="botonNav" text="JUGADORES">
                <cursor>
-                  <Cursor fx:constant="HAND"/>
+                   <Cursor fx:constant="HAND"/>
                </cursor>
                <ripplerFill>
                   <RadialGradient centerX="0.5" centerY="0.5" radius="0.25">
                      <stops>
-                        <Stop color="BLACK"/>
-                        <Stop color="#0080ff" offset="1.0"/>
+                         <Stop color="BLACK"/>
+                         <Stop color="#0080ff" offset="1.0"/>
                      </stops>
                   </RadialGradient>
                </ripplerFill>
             </JFXButton>
-            <JFXButton fx:id="botonNavPartido" alignment="CENTER" buttonType="RAISED" onAction="#linkPartidos"
-                       prefHeight="25.0" prefWidth="110.0" styleClass="botonNav" text="PARTIDOS">
+             <JFXButton fx:id="botonNavPartido" alignment="CENTER" buttonType="RAISED" onAction="#linkPartidos"
+                        prefHeight="25.0" prefWidth="110.0" styleClass="botonNav" text="PARTIDOS">
                <cursor>
-                  <Cursor fx:constant="HAND"/>
+                   <Cursor fx:constant="HAND"/>
                </cursor>
                <ripplerFill>
                   <RadialGradient centerX="0.5" centerY="0.5" radius="0.25">
                      <stops>
-                        <Stop color="#800009"/>
-                        <Stop color="#0080ff" offset="1.0"/>
+                         <Stop color="#800009"/>
+                         <Stop color="#0080ff" offset="1.0"/>
                      </stops>
                   </RadialGradient>
                </ripplerFill>
             </JFXButton>
-            <MenuButton fx:id="botonNavModificacion" alignment="CENTER" mnemonicParsing="false" prefHeight="25.0"
-                        prefWidth="125.0" text="EDICIÓN">
+             <MenuButton fx:id="botonNavModificacion" alignment="CENTER" mnemonicParsing="false" prefHeight="25.0"
+                         prefWidth="125.0" text="EDICIÓN">
                <items>
-                  <MenuItem mnemonicParsing="false" onAction="#linkAltaJugadores" text="Alta de jugadores"/>
-                  <MenuItem mnemonicParsing="false" onAction="#linkAltaEquipos" text="Alta de equipos"/>
+                   <MenuItem mnemonicParsing="false" onAction="#linkAltaJugadores" text="Alta de jugadores"/>
+                   <MenuItem mnemonicParsing="false" onAction="#linkAltaEquipos" text="Alta de equipos"/>
                </items>
                <textFill>
                   <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
                      <stops>
-                        <Stop color="#800009"/>
-                        <Stop color="#0080ff" offset="1.0"/>
+                         <Stop color="#800009"/>
+                         <Stop color="#0080ff" offset="1.0"/>
                      </stops>
                   </RadialGradient>
                </textFill>
             </MenuButton>
          </buttons>
       </ButtonBar>
-      <TextField fx:id="aFieldSearchNombre" layoutX="125.0" layoutY="138.0" prefHeight="16.0" prefWidth="200.0"
-                 AnchorPane.bottomAnchor="350.0" AnchorPane.leftAnchor="125.0" AnchorPane.rightAnchor="425.0"
-                 AnchorPane.topAnchor="125.0"/>
-      <TextField fx:id="aFieldSearchAltura" layoutX="123.0" layoutY="217.0" prefHeight="16.0" prefWidth="200.0"
-                 AnchorPane.bottomAnchor="275.0" AnchorPane.leftAnchor="125.0" AnchorPane.rightAnchor="425.0"
-                 AnchorPane.topAnchor="200.0"/>
-      <TextField fx:id="aFieldSearchPosicion" layoutX="123.0" layoutY="292.0" prefHeight="16.0" prefWidth="200.0"
-                 AnchorPane.bottomAnchor="200.0" AnchorPane.leftAnchor="125.0" AnchorPane.rightAnchor="425.0"
-                 AnchorPane.topAnchor="275.0"/>
-      <TextField fx:id="aFieldSearchProcedencia" layoutX="400.0" layoutY="130.0" prefHeight="16.0" prefWidth="200.0"
-                 AnchorPane.bottomAnchor="350.0" AnchorPane.leftAnchor="400.0" AnchorPane.rightAnchor="150.0"
-                 AnchorPane.topAnchor="125.0"/>
-      <TextField fx:id="aFieldSearchPeso" layoutX="400.0" layoutY="205.0" prefHeight="16.0" prefWidth="200.0"
-                 AnchorPane.bottomAnchor="275.0" AnchorPane.leftAnchor="400.0" AnchorPane.rightAnchor="150.0"
-                 AnchorPane.topAnchor="200.0"/>
-      <TextField fx:id="aFieldSearchEquipo" layoutX="393.0" layoutY="292.0" prefHeight="16.0" prefWidth="200.0"
-                 AnchorPane.bottomAnchor="200.0" AnchorPane.leftAnchor="400.0" AnchorPane.rightAnchor="150.0"
-                 AnchorPane.topAnchor="275.0"/>
+       <TextField fx:id="aFieldSearchNombre" layoutX="125.0" layoutY="138.0" prefHeight="16.0" prefWidth="200.0"
+                  AnchorPane.bottomAnchor="350.0" AnchorPane.leftAnchor="125.0" AnchorPane.rightAnchor="425.0"
+                  AnchorPane.topAnchor="125.0"/>
+       <TextField fx:id="aFieldSearchAltura" layoutX="123.0" layoutY="217.0" prefHeight="16.0" prefWidth="200.0"
+                  AnchorPane.bottomAnchor="275.0" AnchorPane.leftAnchor="125.0" AnchorPane.rightAnchor="425.0"
+                  AnchorPane.topAnchor="200.0"/>
+       <TextField fx:id="aFieldSearchPosicion" layoutX="123.0" layoutY="292.0" prefHeight="16.0" prefWidth="200.0"
+                  AnchorPane.bottomAnchor="200.0" AnchorPane.leftAnchor="125.0" AnchorPane.rightAnchor="425.0"
+                  AnchorPane.topAnchor="275.0"/>
+       <TextField fx:id="aFieldSearchProcedencia" layoutX="400.0" layoutY="130.0" prefHeight="16.0" prefWidth="200.0"
+                  AnchorPane.bottomAnchor="350.0" AnchorPane.leftAnchor="400.0" AnchorPane.rightAnchor="150.0"
+                  AnchorPane.topAnchor="125.0"/>
+       <TextField fx:id="aFieldSearchPeso" layoutX="400.0" layoutY="205.0" prefHeight="16.0" prefWidth="200.0"
+                  AnchorPane.bottomAnchor="275.0" AnchorPane.leftAnchor="400.0" AnchorPane.rightAnchor="150.0"
+                  AnchorPane.topAnchor="200.0"/>
+       <TextField fx:id="aFieldSearchEquipo" layoutX="393.0" layoutY="292.0" prefHeight="16.0" prefWidth="200.0"
+                  AnchorPane.bottomAnchor="200.0" AnchorPane.leftAnchor="400.0" AnchorPane.rightAnchor="150.0"
+                  AnchorPane.topAnchor="275.0"/>
    </children>
 </AnchorPane>

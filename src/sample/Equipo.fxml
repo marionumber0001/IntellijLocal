@@ -82,8 +82,14 @@
                         <AnchorPane fx:id="Polla" layoutX="14.0" layoutY="6.0" prefHeight="90.0" prefWidth="90.0"
                                     styleClass="teamIcon" AnchorPane.bottomAnchor="17.0" AnchorPane.rightAnchor="445.0"
                                     AnchorPane.topAnchor="6.0"/>
-                        <JFXButton layoutX="477.0" layoutY="6.0" onAction="#clickModificar" text="Modificar" />
-                        <JFXButton layoutX="418.0" layoutY="6.0" onAction="#clickEliminar" text="Eliminar" />
+                        <JFXButton layoutX="319.0" onAction="#clickModificar" prefHeight="25.0" prefWidth="90.0"
+                                   styleClass="botonNav" text="Modificar" AnchorPane.bottomAnchor="86.0"
+                                   AnchorPane.leftAnchor="355.0" AnchorPane.rightAnchor="104.0"
+                                   AnchorPane.topAnchor="2.0"/>
+                        <JFXButton layoutX="414.0" onAction="#clickEliminar" prefHeight="25.0" prefWidth="90.0"
+                                   styleClass="botonNav" text="Eliminar" AnchorPane.bottomAnchor="86.0"
+                                   AnchorPane.leftAnchor="450.0" AnchorPane.rightAnchor="9.0"
+                                   AnchorPane.topAnchor="2.0"/>
                     </children>
                 </AnchorPane>
                 <TableView fx:id="fTable" layoutX="201.0" layoutY="199.0" prefHeight="301.0" prefWidth="549.0" styleClass="textTable" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="201.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="201.0" />

@@ -1,35 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/sample/Main.java" />
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="IntellijLocal" />
+    </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="All good">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/charm_glisten_5_0_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/charm_glisten_5_0_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/font_awesome_4_7_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/font_awesome_4_7_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/fontawesomefx_commons_9_1_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/fontawesomefx_commons_9_1_2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/ikonli_core_2_3_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/ikonli_core_2_3_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/ikonli_javafx_2_3_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/ikonli_javafx_2_3_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/jfoenix_9_0_8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/jfoenix_9_0_8.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_16.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_8_0_16.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/IntellijLocal/META-INF/IntellijLocal.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IntellijLocal/css/ph.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IntellijLocal/css/ph.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IntellijLocal/db/AccesToData.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IntellijLocal/db/AccesToData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IntellijLocal/modelos/Equipo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IntellijLocal/modelos/Equipo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IntellijLocal/sample/ControllerAltaEquipo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IntellijLocal/sample/ControllerAltaEquipo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IntellijLocal/sample/ControllerAltaJugador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IntellijLocal/sample/ControllerAltaJugador.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IntellijLocal/sample/ControllerEquipo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IntellijLocal/sample/ControllerEquipo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/IntellijLocal/sample/ControllerPartidos.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IntellijLocal/sample/ControllerPartidos.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IntellijLocal/sample/Equipo.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IntellijLocal/sample/Equipo.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IntellijLocal/sample/Jugador.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IntellijLocal/sample/Jugador.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IntellijLocal/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IntellijLocal/sample/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/IntellijLocal/sample/Partidos.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/IntellijLocal/sample/Partidos.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/ph.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/ph.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/AccesToData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/AccesToData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/109608.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/BeFunky-photo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/at.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/nba.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/person.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modelos/Equipo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modelos/Equipo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/ControllerAltaEquipo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/ControllerAltaEquipo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/AltaEquipo.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/AltaEquipo.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/AltaJugador.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/AltaJugador.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/ControllerAltaJugador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/ControllerAltaJugador.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/ControllerEquipo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/ControllerEquipo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/ControllerPartidos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/ControllerPartidos.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/Equipo.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Equipo.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/Jugador.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Jugador.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Partidos.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Partidos.fxml" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -104,19 +103,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/css/ph.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="56" column="9" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/ControllerEquipo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1005">
-              <caret line="91" selection-start-line="91" selection-end-line="91" />
+            <state relative-caret-position="225">
+              <caret line="80" selection-start-line="80" selection-end-line="80" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#3350#3351#0" expanded="true" />
@@ -134,59 +124,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/ControllerAltaEquipo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-543">
-              <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#600#601#0" expanded="true" />
-                <element signature="e#629#630#0" expanded="true" />
-                <element signature="e#677#678#0" expanded="true" />
-                <element signature="e#705#706#0" expanded="true" />
-                <element signature="e#751#752#0" expanded="true" />
-                <element signature="e#798#799#0" expanded="true" />
-                <element signature="e#848#849#0" expanded="true" />
-                <element signature="e#902#903#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/modelos/Equipo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
-              <folding>
-                <element signature="e#848#849#0" expanded="true" />
-                <element signature="e#887#888#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/db/AccesToData.java">
+        <entry file="file://$PROJECT_DIR$/src/sample/ControllerAltaJugador.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5">
-              <caret line="243" column="22" selection-start-line="243" selection-start-column="22" selection-end-line="243" selection-end-column="22" />
+            <state relative-caret-position="795">
+              <caret line="53" column="30" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#565#574#0" expanded="true" />
-                <element signature="e#2026#2035#0" expanded="true" />
+                <element signature="e#685#686#0" expanded="true" />
+                <element signature="e#714#715#0" expanded="true" />
+                <element signature="e#764#765#0" expanded="true" />
+                <element signature="e#792#793#0" expanded="true" />
+                <element signature="e#1572#1573#0" expanded="true" />
+                <element signature="e#1627#1628#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sample/Equipo.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="85" column="35" lean-forward="true" selection-start-line="85" selection-start-column="25" selection-end-line="85" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -235,7 +186,6 @@
         <option value="$PROJECT_DIR$/src/db/BaseDeDatos.java" />
         <option value="$PROJECT_DIR$/src/sample/Player.fxml" />
         <option value="$PROJECT_DIR$/src/sample/As.fxml" />
-        <option value="$PROJECT_DIR$/src/sample/Main.java" />
         <option value="$PROJECT_DIR$/src/modelos/Estadistica.java" />
         <option value="$PROJECT_DIR$/src/modelos/Jugador.java" />
         <option value="$PROJECT_DIR$/src/sample/AltaEquipo.fxml" />
@@ -244,14 +194,15 @@
         <option value="$PROJECT_DIR$/src/sample/Partidos.fxml" />
         <option value="$PROJECT_DIR$/src/sample/ControllerPlayer.java" />
         <option value="$PROJECT_DIR$/src/modelos/Partido.java" />
-        <option value="$PROJECT_DIR$/src/sample/ControllerPartidos.java" />
-        <option value="$PROJECT_DIR$/src/css/ph.css" />
-        <option value="$PROJECT_DIR$/src/sample/Equipo.fxml" />
-        <option value="$PROJECT_DIR$/src/sample/ControllerAltaJugador.java" />
-        <option value="$PROJECT_DIR$/src/sample/ControllerEquipo.java" />
         <option value="$PROJECT_DIR$/src/modelos/Equipo.java" />
         <option value="$PROJECT_DIR$/src/sample/ControllerAltaEquipo.java" />
         <option value="$PROJECT_DIR$/src/db/AccesToData.java" />
+        <option value="$PROJECT_DIR$/src/sample/Equipo.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/Main.java" />
+        <option value="$PROJECT_DIR$/src/sample/ControllerPartidos.java" />
+        <option value="$PROJECT_DIR$/src/sample/ControllerEquipo.java" />
+        <option value="$PROJECT_DIR$/src/css/ph.css" />
+        <option value="$PROJECT_DIR$/src/sample/ControllerAltaJugador.java" />
       </list>
     </option>
   </component>
@@ -287,24 +238,6 @@
               <item name="IntellijLocal" type="b2602c69:ProjectViewProjectNode" />
               <item name="IntellijLocal" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="IntellijLocal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IntellijLocal" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="IntellijLocal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IntellijLocal" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="modelos" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="IntellijLocal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IntellijLocal" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="sample" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -327,11 +260,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="C:/Program Files/Java/javafx-sdk-12.0.1/lib" />
+    <property name="last_opened_file_path" value="C:/Program Files/Java/jre1.8.0_211/lib/ext/jfxrt.jar!/" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
@@ -458,7 +391,11 @@
       <workItem from="1559277905594" duration="596000" />
       <workItem from="1559395094428" duration="25000" />
       <workItem from="1559395152168" duration="21000" />
-      <workItem from="1559395188853" duration="9807000" />
+      <workItem from="1559395188853" duration="9858000" />
+      <workItem from="1559513928671" duration="602000" />
+      <workItem from="1559570415293" duration="1788000" />
+      <workItem from="1559572588261" duration="26000" />
+      <workItem from="1559633059296" duration="6498000" />
     </task>
     <task id="LOCAL-00001" summary="All good">
       <created>1558918368717</created>
@@ -509,25 +446,33 @@
       <option name="project" value="LOCAL" />
       <updated>1559173032768</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="All good">
+      <created>1559406811173</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1559406811174</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="126939000" />
+    <option name="totallyTimeSpent" value="135904000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.23338369" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.24697885" />
       <window_info id="Structure" order="1" weight="0.25" />
-      <window_info id="Favorites" order="2" />
+      <window_info id="Favorites" order="2" weight="0.32930514" />
       <window_info id="Designer" order="3" />
       <window_info id="Image Layers" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.4087948" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24267101" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39576548" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -537,7 +482,7 @@
       <window_info anchor="bottom" id="Problems" order="9" />
       <window_info anchor="bottom" id="Changes" order="10" />
       <window_info anchor="bottom" id="Profiler" order="11" />
-      <window_info anchor="bottom" id="Event Log" order="12" />
+      <window_info anchor="bottom" id="Event Log" order="12" weight="0.32899022" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32736155" />
       <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="15" />
@@ -555,16 +500,16 @@
       <window_info anchor="right" id="Theme Preview" order="10" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.23338369" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" weight="0.24697885" />
       <window_info id="Structure" order="1" weight="0.25" />
-      <window_info id="Favorites" order="2" />
+      <window_info id="Favorites" order="2" weight="0.32930514" />
       <window_info id="Designer" order="3" />
       <window_info id="Image Layers" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32247558" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24104235" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39576548" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -574,7 +519,7 @@
       <window_info anchor="bottom" id="Problems" order="9" />
       <window_info anchor="bottom" id="Changes" order="10" />
       <window_info anchor="bottom" id="Profiler" order="11" />
-      <window_info anchor="bottom" id="Event Log" order="12" />
+      <window_info anchor="bottom" id="Event Log" order="12" weight="0.32899022" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32736155" />
       <window_info anchor="bottom" id="Docker" order="14" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="15" />
@@ -700,28 +645,28 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/AltaEquipo.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="747">
           <caret line="98" selection-start-line="98" selection-end-line="98" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/AltaJugador.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1461">
           <caret line="108" selection-start-line="108" selection-end-line="108" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Jugador.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="543">
           <caret line="141" column="11" selection-start-line="141" selection-start-column="11" selection-end-line="141" selection-end-column="11" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/modelos/Partido.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -731,21 +676,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Partidos.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="24" column="103" selection-start-line="24" selection-start-column="103" selection-end-line="24" selection-end-column="103" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53">
-          <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
-          <folding>
-            <element signature="e#404#405#0" expanded="true" />
-            <element signature="e#432#433#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -780,54 +714,84 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/ControllerPartidos.java">
+    <entry file="file://$PROJECT_DIR$/src/images/76ers.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modelos/Equipo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="654">
-          <caret line="96" selection-start-line="96" selection-end-line="96" />
+        <state relative-caret-position="225">
+          <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/db/AccesToData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="243" column="22" selection-start-line="243" selection-start-column="22" selection-end-line="243" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/images/76ers.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/ph.css">
+    <entry file="file://$PROJECT_DIR$/src/sample/ControllerPartidos.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="56" column="9" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
+        <state relative-caret-position="285">
+          <caret line="43" column="76" selection-start-line="43" selection-start-column="76" selection-end-line="43" selection-end-column="76" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Equipo.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="85" column="35" lean-forward="true" selection-start-line="85" selection-start-column="25" selection-end-line="85" selection-end-column="35" />
+        <state relative-caret-position="1725">
+          <caret line="115" column="11" selection-start-line="115" selection-start-column="11" selection-end-line="115" selection-end-column="11" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/ControllerAltaJugador.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/ControllerAltaEquipo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="91" column="5" lean-forward="true" selection-start-line="12" selection-end-line="97" />
+        <state relative-caret-position="315">
+          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#685#686#0" expanded="true" />
-            <element signature="e#714#715#0" expanded="true" />
-            <element signature="e#764#765#0" expanded="true" />
-            <element signature="e#792#793#0" expanded="true" />
-            <element signature="e#1572#1573#0" expanded="true" />
-            <element signature="e#1627#1628#0" expanded="true" />
+            <element signature="e#600#601#0" expanded="true" />
+            <element signature="e#629#630#0" expanded="true" />
+            <element signature="e#677#678#0" expanded="true" />
+            <element signature="e#705#706#0" expanded="true" />
+            <element signature="e#751#752#0" expanded="true" />
+            <element signature="e#798#799#0" expanded="true" />
+            <element signature="e#848#849#0" expanded="true" />
+            <element signature="e#902#903#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/ph.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="39" column="46" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="46" />
+          <folding>
+            <element signature="e#404#405#0" expanded="true" />
+            <element signature="e#432#433#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/ControllerEquipo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1005">
-          <caret line="91" selection-start-line="91" selection-end-line="91" />
+        <state relative-caret-position="225">
+          <caret line="80" selection-start-line="80" selection-end-line="80" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#3350#3351#0" expanded="true" />
@@ -844,43 +808,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/ControllerAltaEquipo.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/ControllerAltaJugador.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-543">
-          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+        <state relative-caret-position="795">
+          <caret line="53" column="30" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#600#601#0" expanded="true" />
-            <element signature="e#629#630#0" expanded="true" />
-            <element signature="e#677#678#0" expanded="true" />
-            <element signature="e#705#706#0" expanded="true" />
-            <element signature="e#751#752#0" expanded="true" />
-            <element signature="e#798#799#0" expanded="true" />
-            <element signature="e#848#849#0" expanded="true" />
-            <element signature="e#902#903#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modelos/Equipo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
-          <folding>
-            <element signature="e#848#849#0" expanded="true" />
-            <element signature="e#887#888#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/db/AccesToData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5">
-          <caret line="243" column="22" selection-start-line="243" selection-start-column="22" selection-end-line="243" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#565#574#0" expanded="true" />
-            <element signature="e#2026#2035#0" expanded="true" />
+            <element signature="e#685#686#0" expanded="true" />
+            <element signature="e#714#715#0" expanded="true" />
+            <element signature="e#764#765#0" expanded="true" />
+            <element signature="e#792#793#0" expanded="true" />
+            <element signature="e#1572#1573#0" expanded="true" />
+            <element signature="e#1627#1628#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -891,6 +830,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
+          <last-edited>IntellijLocal</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -950,7 +890,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>lib</last-edited>
+          <last-edited>jfxrt</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

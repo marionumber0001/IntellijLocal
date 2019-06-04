@@ -42,6 +42,7 @@ public class Main extends Application {
         primaryStage.setMaxHeight(500);
         primaryStage.setMinWidth(750);
         primaryStage.setMinHeight(500);
+        primaryStage.setResizable(false);
         String uri = instancia.getClass().getResource("../css/ph.css").toExternalForm();
         scene.getStylesheets().add(uri);
 
